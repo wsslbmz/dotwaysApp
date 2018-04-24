@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar hideWhen="hide">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>
+            Corbeille
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding id="page12">
+    <!-- <ion-list id="corbeille-list15">
+    <ion-item-sliding>
+      <ion-item color="none" id="corbeille-list-item41">
+        <ion-thumbnail item-left>
+          <img />
+        </ion-thumbnail>
+        <h2>
+          Item
+        </h2>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="positive"></button>
+        <button ion-button color="assertive"></button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list> -->
+
+    <maps #map class="hide"></maps>
+    <button ion-button (click)="hideelem()">Hide Div</button>
+    <div *ngIf="hide"> here your content</div>
+
+</ion-content>

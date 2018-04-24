@@ -1,0 +1,26 @@
+<ion-content padding id="page10">
+    <form id="register2-form4">
+        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+        <div class="spacer" style="width:300px;height:10px;" id="register2-spacer9"></div>
+        <div id="register2-markdown1" class="show-list-numbers-and-dots">
+        </div>
+        <ion-list id="register2-list8">
+            <ion-item id="register2-input8">
+                <ion-label floating>
+                    Numero Telephone
+                </ion-label>
+                <ion-input [(ngModel)]="mobileUser" type="tel" name="mobileUser"></ion-input>
+            </ion-item>
+            <ion-item id="register2-input10">
+                <ion-label floating>
+                    Email
+                </ion-label>
+                <ion-input [(ngModel)]="emailUser" type="email" name="emailUser"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width:300px;height:57px;" id="register2-spacer10"></div>
+        <button id="register2-button10" ion-button color="positive" block on-click="goToValidnum()">
+      Envoyer
+    </button>
+    </form>
+</ion-content>

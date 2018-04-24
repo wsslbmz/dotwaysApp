@@ -1,0 +1,57 @@
+<ion-menu [content]="mainContent">
+    <ion-content id="side-menu21" style="background-color:#F6F6F6;">
+        <div class="spacer" style="width:268px;height:36px;" id="menu-spacer1"></div>
+        <ion-list id="menu-list6">
+            <ion-item color="none" menuClose="" on-click="goToProfile()" id="menu-list-item16">
+                <ion-avatar item-left>
+                    <img />
+                </ion-avatar>
+                <h2>
+                    User
+                </h2>
+            </ion-item>
+            <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item17">
+                <ion-icon name="home" item-left></ion-icon>
+                Acceuil
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+            <ion-item color="none" menuClose="" on-click="goToHistorique()" id="menu-list-item19">
+                <ion-icon name="archive" item-left></ion-icon>
+                Historique
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+            <ion-item color="none" menuClose="" on-click="goToAdresses()" id="menu-list-item18">
+                <ion-icon name="locate" item-left></ion-icon>
+                Mes Adresses
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+            <ion-item color="none" menuClose="" on-click="goToCorbeille()" id="menu-list-item22">
+                <ion-icon name="trash" item-left></ion-icon>
+                Corbeille
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer2"></div>
+        <ion-list id="menu-list7">
+            <ion-item color="none" menuClose="" on-click="goToNotification()" id="menu-list-item23">
+                <ion-icon name="notifications" item-left></ion-icon>
+                Notification
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+            <ion-item color="none" menuClose="" on-click="goToConfiguration()" id="menu-list-item24">
+                <ion-icon name="settings" item-left></ion-icon>
+                Configuration
+                <ion-icon name="arrow-forward" item-right></ion-icon>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer13"></div>
+        <ion-list id="menu-list22">
+            <ion-item color="assertive" id="menu-list-item64" on-click="goTotuto()">
+                <ion-icon name="log-out" item-left></ion-icon>
+                Deconexion
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

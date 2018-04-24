@@ -1,0 +1,37 @@
+<ion-content padding id="page6">
+    <form id="register-form2">
+        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+        <div class="spacer" style="width:300px;height:10px;" id="register-spacer5"></div>
+        <ion-list id="register-list14">
+            <ion-item id="register-input3">
+                <ion-label floating>
+                    Nom
+                </ion-label>
+                <ion-input [(ngModel)]="nameUser" name="nameUser" type="text"></ion-input>
+            </ion-item>
+            <ion-item id="register-input6">
+                <ion-label floating>
+                    Prenom
+                </ion-label>
+                <ion-input [(ngModel)]="surnameUser" name="surnameUser" type="text"></ion-input>
+            </ion-item>
+            <ion-item id="register-input5">
+                <ion-label floating>
+                    login
+                </ion-label>
+                <ion-input [(ngModel)]="login" name="login" type="text"></ion-input>
+            </ion-item>
+            <ion-item id="register-input4">
+                <ion-label floating>
+                    Mot de passe
+                </ion-label>
+                <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width:300px;height:10px;" id="register-spacer6"></div>
+        <button id="register-button5" ion-button color="positive" block on-click="goToRegister2()">
+      Continuer
+    </button>
+        <button id="register-button8" ion-button clear color="positive" block href-inappbrowser="/signup"></button>
+    </form>
+</ion-content>

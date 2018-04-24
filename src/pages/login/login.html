@@ -1,0 +1,50 @@
+<ion-content padding id="page5">
+    <form id="login-form1" [formGroup]="userForm">
+        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>login</ion-label>
+                <ion-input formControlName="loginCtl" [(ngModel)]="login" name="login" type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input formControlName="passwordCtl" [(ngModel)]="password" name="pasword" type="password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width:300px;height:10px;" id="login-spacer3"></div>
+        <button id="login-button1" ion-button color="positive" block on-click="authlogin()">
+      Se connecter
+    </button>
+        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-buttons start>
+                        <button id="login-button3" ion-button color="fb" icon-left block on-click="loginFB()">
+      <ion-icon name="logo-facebook"></ion-icon>
+       Facebook
+    </button>
+                    </ion-buttons>
+
+                </ion-col>
+                <ion-col>
+                    <ion-buttons end>
+                        <button id="login-button4" ion-button color="danger" icon-left block on-click="loginGP()">
+      <ion-icon name="logo-googleplus"></ion-icon>
+        Google+
+    </button>
+                    </ion-buttons>
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+        <button id="login-button2" ion-button clear color="positive" block on-click="goToRegister()">
+      Cree un compte
+    </button>
+    </form>
+</ion-content>

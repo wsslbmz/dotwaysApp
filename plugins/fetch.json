@@ -1,0 +1,1 @@
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="2151809161716884" --variable APP_NAME="DDW"

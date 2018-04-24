@@ -1,0 +1,24 @@
+<!-- Generated template for the MapComponent component -->
+<div class="wrapper">
+    <input id="pac-input" class="controls" type="text" placeholder="Chercher une place">
+    <div id="map"></div>
+    <div *ngIf="hide && dispalycomponent == 'sendpackage'" class="center imgcenter">
+        <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />
+    </div>
+    <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == 'sendpackage'">
+        <div class="content"></div>
+    </sendpackage>
+    <addadress [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == 'addadress'">
+        <div class="content"></div>
+    </addadress>
+
+    <!-- <sendpackage [map]="map"> </sendpackage> -->
+    <!-- <pickup [map]="map" [isPinSet]="isMapIdle" [isPickupRequested]="isPickupRequested" [destination]="destination" (updatedPickupLocation)="updatePickupLocation($event)">
+    </pickup>
+
+    <available-cars [map]="map" [isPickupRequested]="isPickupRequested">
+    </available-cars>
+
+    <pickup-car [map]="map" [isPickupRequested]="isPickupRequested" [pickupLocation]="currentLocation" [destination]="destination">
+    </pickup-car> -->
+</div>

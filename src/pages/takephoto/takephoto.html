@@ -1,0 +1,16 @@
+<ion-content id="page10">
+    <form id="takephoto-form4">
+        <div class="spacer" style="width:320px;height:71px;" id="takephoto-spacer4"></div>
+        <img src="{{imageFileName}}" *ngIf="imageFileName" alt="profile image" width="300" name="img" />
+        <!-- <button ion-button color="secondary" (click)="getImage()">photo</button> -->
+        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" (click)="getImage()" />
+
+        <div class="spacer" style="width:320px;height:47px;" id="takephoto-spacer5"></div>
+        <button id="takephoto-button7" ion-button color="energized" block (click)="uploadFile()">
+      Continuer
+    </button>
+        <button id="takephoto-button8" ion-button color="stable" block style="color:#FFAB00;" on-click="goToHome()">
+      passer
+    </button>
+    </form>
+</ion-content>

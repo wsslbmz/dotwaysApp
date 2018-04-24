@@ -1,0 +1,9 @@
+<!-- Generated template for the SendpackageComponent component -->
+<div id="locator1" *ngIf="index == 0"></div>
+<div id="locator2" *ngIf="index == 1"></div>
+<ion-fab class="buttonfab" bottom right>
+    <button ion-fab (click)="nextStep()" *ngIf=" index < 6"><ion-icon name="arrow-forward"></ion-icon></button>
+</ion-fab>
+<ion-fab class="buttonfab" bottom left>
+    <button ion-fab (click)="prevStep()" *ngIf="index > 0 && index < 6"><ion-icon name="arrow-back"></ion-icon></button>
+</ion-fab>
