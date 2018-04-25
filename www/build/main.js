@@ -23,7 +23,7 @@ var AddadressPage = (function () {
     }
     AddadressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addadress',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/addadress/addadress.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>Ajouter adresse</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div class="map-wrapper">\n        <maps #map [dispalycomponent]="dispalycomponent">\n        </maps>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/addadress/addadress.html"*/,
+            selector: 'page-addadress',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/addadress/addadress.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>Ajouter adresse</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div class="map-wrapper">\n        <maps #map [dispalycomponent]="dispalycomponent">\n        </maps>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/addadress/addadress.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], AddadressPage);
@@ -44,7 +44,7 @@ var AddadressPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validnum_validnum__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_adduser_adduser__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,7 +107,7 @@ var Register2Page = (function () {
     };
     Register2Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register2',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/register2/register2.html"*/'<ion-content padding id="page10">\n    <form id="register2-form4">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="register2-spacer9"></div>\n        <div id="register2-markdown1" class="show-list-numbers-and-dots">\n        </div>\n        <ion-list id="register2-list8">\n            <ion-item id="register2-input8">\n                <ion-label floating>\n                    Numero Telephone\n                </ion-label>\n                <ion-input [(ngModel)]="mobileUser" type="tel" name="mobileUser"></ion-input>\n            </ion-item>\n            <ion-item id="register2-input10">\n                <ion-label floating>\n                    Email\n                </ion-label>\n                <ion-input [(ngModel)]="emailUser" type="email" name="emailUser"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:57px;" id="register2-spacer10"></div>\n        <button id="register2-button10" ion-button color="positive" block on-click="goToValidnum()">\n      Envoyer\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/register2/register2.html"*/
+            selector: 'page-register2',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/register2/register2.html"*/'<ion-content padding id="page10">\n    <form id="register2-form4">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="register2-spacer9"></div>\n        <div id="register2-markdown1" class="show-list-numbers-and-dots">\n        </div>\n        <ion-list id="register2-list8">\n            <ion-item id="register2-input8">\n                <ion-label floating>\n                    Numero Telephone\n                </ion-label>\n                <ion-input [(ngModel)]="mobileUser" type="tel" name="mobileUser"></ion-input>\n            </ion-item>\n            <ion-item id="register2-input10">\n                <ion-label floating>\n                    Email\n                </ion-label>\n                <ion-input [(ngModel)]="emailUser" type="email" name="emailUser"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:57px;" id="register2-spacer10"></div>\n        <button id="register2-button10" ion-button color="positive" block on-click="goToValidnum()">\n      Envoyer\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/register2/register2.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_adduser_adduser__["a" /* AdduserProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */]])
     ], Register2Page);
@@ -185,7 +185,7 @@ var TabsControllerPage = (function () {
     }
     TabsControllerPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs-controller',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/tabs-controller/tabs-controller.html"*/'<ion-tabs id="tabsController-tabs1">\n  <ion-tab [root]="tab1Root" tabTitle=" Adresses Privee" tabIcon="star" id="tabsController-tab1"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Adresses Publique" tabIcon="flag" id="tabsController-tab2"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Adresses Partage" tabIcon="people" id="tabsController-tab3"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/tabs-controller/tabs-controller.html"*/
+            selector: 'page-tabs-controller',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/tabs-controller/tabs-controller.html"*/'<ion-tabs id="tabsController-tabs1">\n  <ion-tab [root]="tab1Root" tabTitle=" Adresses Privee" tabIcon="star" id="tabsController-tab1"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Adresses Publique" tabIcon="flag" id="tabsController-tab2"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Adresses Partage" tabIcon="people" id="tabsController-tab3"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/tabs-controller/tabs-controller.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], TabsControllerPage);
@@ -227,7 +227,7 @@ var AdressesPriveePage = (function () {
     };
     AdressesPriveePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-adresses-privee',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-privee/adresses-privee.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Privee\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page2">\n    <ion-list id="adressesPrivee-list10">\n        <ion-item-sliding>\n            <ion-item color="none" id="adressesPrivee-list-item32">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n                <ion-icon name="share"></ion-icon>\n              </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n                <ion-icon name="trash"></ion-icon>\n              </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n    <ion-fab right bottom>\n        <button ion-fab color="secondary" on-click="goToAddadress()"><ion-icon name="add" ></ion-icon></button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-privee/adresses-privee.html"*/
+            selector: 'page-adresses-privee',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-privee/adresses-privee.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Privee\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page2">\n    <ion-list id="adressesPrivee-list10">\n        <ion-item-sliding>\n            <ion-item color="none" id="adressesPrivee-list-item32">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n                <ion-icon name="share"></ion-icon>\n              </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n                <ion-icon name="trash"></ion-icon>\n              </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n    <ion-fab right bottom>\n        <button ion-fab color="secondary" on-click="goToAddadress()"><ion-icon name="add" ></ion-icon></button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-privee/adresses-privee.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], AdressesPriveePage);
@@ -269,7 +269,7 @@ var AdressesPubliquePage = (function () {
     };
     AdressesPubliquePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-adresses-publique',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-publique/adresses-publique.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Publique\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page3">\n    <ion-list id="adressesPublique-list11">\n        <ion-item color="none" id="adressesPublique-list-item33">\n            <ion-thumbnail item-left>\n                <img />\n            </ion-thumbnail>\n            <h2>\n                Item\n            </h2>\n        </ion-item>\n    </ion-list>\n    <ion-fab right bottom>\n        <button ion-fab color="secondary" on-click="goToAddadress()"><ion-icon name="add"></ion-icon></button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-publique/adresses-publique.html"*/
+            selector: 'page-adresses-publique',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-publique/adresses-publique.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Publique\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page3">\n    <ion-list id="adressesPublique-list11">\n        <ion-item color="none" id="adressesPublique-list-item33">\n            <ion-thumbnail item-left>\n                <img />\n            </ion-thumbnail>\n            <h2>\n                Item\n            </h2>\n        </ion-item>\n    </ion-list>\n    <ion-fab right bottom>\n        <button ion-fab color="secondary" on-click="goToAddadress()"><ion-icon name="add"></ion-icon></button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-publique/adresses-publique.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], AdressesPubliquePage);
@@ -304,7 +304,7 @@ var AdressesPartagePage = (function () {
     }
     AdressesPartagePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-adresses-partage',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-partage/adresses-partage.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Partage\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page4">\n    <ion-list id="adressesPartage-list12">\n        <ion-item-sliding>\n            <ion-item color="none" id="adressesPartage-list-item34">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n                    <ion-icon name="share"></ion-icon>\n                  </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n                    <ion-icon name="trash"></ion-icon>\n                  </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/adresses-partage/adresses-partage.html"*/
+            selector: 'page-adresses-partage',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-partage/adresses-partage.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Adresses Partage\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page4">\n    <ion-list id="adressesPartage-list12">\n        <ion-item-sliding>\n            <ion-item color="none" id="adressesPartage-list-item34">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n                    <ion-icon name="share"></ion-icon>\n                  </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n                    <ion-icon name="trash"></ion-icon>\n                  </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/adresses-partage/adresses-partage.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], AdressesPartagePage);
@@ -325,7 +325,7 @@ var AdressesPartagePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__register_register__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__register2_register2__ = __webpack_require__(141);
@@ -459,7 +459,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/login/login.html"*/'<ion-content padding id="page5">\n    <form id="login-form1" [formGroup]="userForm">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>\n        <ion-list>\n\n            <ion-item>\n                <ion-label floating>login</ion-label>\n                <ion-input formControlName="loginCtl" [(ngModel)]="login" name="login" type="text"></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label floating>Password</ion-label>\n                <ion-input formControlName="passwordCtl" [(ngModel)]="password" name="pasword" type="password"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer3"></div>\n        <button id="login-button1" ion-button color="positive" block on-click="authlogin()">\n      Se connecter\n    </button>\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>\n        <ion-grid>\n            <ion-row>\n                <ion-col>\n                    <ion-buttons start>\n                        <button id="login-button3" ion-button color="fb" icon-left block on-click="loginFB()">\n      <ion-icon name="logo-facebook"></ion-icon>\n       Facebook\n    </button>\n                    </ion-buttons>\n\n                </ion-col>\n                <ion-col>\n                    <ion-buttons end>\n                        <button id="login-button4" ion-button color="danger" icon-left block on-click="loginGP()">\n      <ion-icon name="logo-googleplus"></ion-icon>\n        Google+\n    </button>\n                    </ion-buttons>\n\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n\n\n        <button id="login-button2" ion-button clear color="positive" block on-click="goToRegister()">\n      Cree un compte\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/login/login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/login/login.html"*/'<ion-content padding id="page5">\n    <form id="login-form1" [formGroup]="userForm">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>\n        <ion-list>\n\n            <ion-item>\n                <ion-label floating>login</ion-label>\n                <ion-input formControlName="loginCtl" [(ngModel)]="login" name="login" type="text"></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label floating>Password</ion-label>\n                <ion-input formControlName="passwordCtl" [(ngModel)]="password" name="pasword" type="password"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer3"></div>\n        <button id="login-button1" ion-button color="positive" block on-click="authlogin()">\n      Se connecter\n    </button>\n        <div class="spacer" style="width:300px;height:10px;" id="login-spacer4"></div>\n        <ion-grid>\n            <ion-row>\n                <ion-col>\n                    <ion-buttons start>\n                        <button id="login-button3" ion-button color="fb" icon-left block on-click="loginFB()">\n      <ion-icon name="logo-facebook"></ion-icon>\n       Facebook\n    </button>\n                    </ion-buttons>\n\n                </ion-col>\n                <ion-col>\n                    <ion-buttons end>\n                        <button id="login-button4" ion-button color="danger" icon-left block on-click="loginGP()">\n      <ion-icon name="logo-googleplus"></ion-icon>\n        Google+\n    </button>\n                    </ion-buttons>\n\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n\n\n        <button id="login-button2" ion-button clear color="positive" block on-click="goToRegister()">\n      Cree un compte\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/login/login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__["a" /* Facebook */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */]])
@@ -519,7 +519,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/register/register.html"*/'<ion-content padding id="page6">\n    <form id="register-form2">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="register-spacer5"></div>\n        <ion-list id="register-list14">\n            <ion-item id="register-input3">\n                <ion-label floating>\n                    Nom\n                </ion-label>\n                <ion-input [(ngModel)]="nameUser" name="nameUser" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input6">\n                <ion-label floating>\n                    Prenom\n                </ion-label>\n                <ion-input [(ngModel)]="surnameUser" name="surnameUser" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input5">\n                <ion-label floating>\n                    login\n                </ion-label>\n                <ion-input [(ngModel)]="login" name="login" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input4">\n                <ion-label floating>\n                    Mot de passe\n                </ion-label>\n                <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="register-spacer6"></div>\n        <button id="register-button5" ion-button color="positive" block on-click="goToRegister2()">\n      Continuer\n    </button>\n        <button id="register-button8" ion-button clear color="positive" block href-inappbrowser="/signup"></button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/register/register.html"*/
+            selector: 'page-register',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/register/register.html"*/'<ion-content padding id="page6">\n    <form id="register-form2">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="register-spacer5"></div>\n        <ion-list id="register-list14">\n            <ion-item id="register-input3">\n                <ion-label floating>\n                    Nom\n                </ion-label>\n                <ion-input [(ngModel)]="nameUser" name="nameUser" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input6">\n                <ion-label floating>\n                    Prenom\n                </ion-label>\n                <ion-input [(ngModel)]="surnameUser" name="surnameUser" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input5">\n                <ion-label floating>\n                    login\n                </ion-label>\n                <ion-input [(ngModel)]="login" name="login" type="text"></ion-input>\n            </ion-item>\n            <ion-item id="register-input4">\n                <ion-label floating>\n                    Mot de passe\n                </ion-label>\n                <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="register-spacer6"></div>\n        <button id="register-button5" ion-button color="positive" block on-click="goToRegister2()">\n      Continuer\n    </button>\n        <button id="register-button8" ion-button clear color="positive" block href-inappbrowser="/signup"></button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/register/register.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], RegisterPage);
@@ -621,7 +621,7 @@ var TakephotoPage = (function () {
     };
     TakephotoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-takephoto',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/takephoto/takephoto.html"*/'<ion-content id="page10">\n    <form id="takephoto-form4">\n        <div class="spacer" style="width:320px;height:71px;" id="takephoto-spacer4"></div>\n        <img src="{{imageFileName}}" *ngIf="imageFileName" alt="profile image" width="300" name="img" />\n        <!-- <button ion-button color="secondary" (click)="getImage()">photo</button> -->\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" (click)="getImage()" />\n\n        <div class="spacer" style="width:320px;height:47px;" id="takephoto-spacer5"></div>\n        <button id="takephoto-button7" ion-button color="energized" block (click)="uploadFile()">\n      Continuer\n    </button>\n        <button id="takephoto-button8" ion-button color="stable" block style="color:#FFAB00;" on-click="goToHome()">\n      passer\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/takephoto/takephoto.html"*/
+            selector: 'page-takephoto',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/takephoto/takephoto.html"*/'<ion-content id="page10">\n    <form id="takephoto-form4">\n        <div class="spacer" style="width:320px;height:71px;" id="takephoto-spacer4"></div>\n        <img src="{{imageFileName}}" *ngIf="imageFileName" alt="profile image" width="300" name="img" />\n        <!-- <button ion-button color="secondary" (click)="getImage()">photo</button> -->\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" (click)="getImage()" />\n\n        <div class="spacer" style="width:320px;height:47px;" id="takephoto-spacer5"></div>\n        <button id="takephoto-button7" ion-button color="energized" block (click)="uploadFile()">\n      Continuer\n    </button>\n        <button id="takephoto-button8" ion-button color="stable" block style="color:#FFAB00;" on-click="goToHome()">\n      passer\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/takephoto/takephoto.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__["a" /* FileTransfer */],
@@ -642,8 +642,8 @@ var TakephotoPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdduserProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -701,7 +701,7 @@ var AdduserProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(417);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -733,12 +733,11 @@ var ProfilePage = (function () {
     };
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/profile/profile.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Profile\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="brush"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page8">\n    <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n    <ion-list id="profile-list6">\n        <ion-item color="none" id="profile-list-item14">\n            <ion-icon name="person" item-left></ion-icon>\n            {{nom}} {{prenom}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item15">\n            <ion-icon name="finger-print" item-left></ion-icon>\n            {{login}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item18">\n            <ion-icon name="mail" item-left></ion-icon>\n            {{email}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item16">\n            <ion-icon name="key" item-left></ion-icon>\n            ********* <button ion-button end><ion-icon name="lock"  isActive="true"></ion-icon></button>\n        </ion-item>\n        <ion-item color="none" id="profile-list-item17">\n            <ion-icon name="star" item-left></ion-icon>\n            Rate {{rate}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/profile/profile.html"*/
+            selector: 'page-profile',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/profile/profile.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Profile\n        </ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only>\n        <ion-icon name="brush"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page8">\n    <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n    <ion-list id="profile-list6">\n        <ion-item color="none" id="profile-list-item14">\n            <ion-icon name="person" item-left></ion-icon>\n            {{nom}} {{prenom}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item15">\n            <ion-icon name="finger-print" item-left></ion-icon>\n            {{login}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item18">\n            <ion-icon name="mail" item-left></ion-icon>\n            {{email}}\n        </ion-item>\n        <ion-item color="none" id="profile-list-item16">\n            <ion-icon name="key" item-left></ion-icon>\n            ********* <button ion-button end><ion-icon name="lock"  isActive="true"></ion-icon></button>\n        </ion-item>\n        <ion-item color="none" id="profile-list-item17">\n            <ion-icon name="star" item-left></ion-icon>\n            Rate {{rate}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/profile/profile.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]])
     ], ProfilePage);
     return ProfilePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=profile.js.map
@@ -769,7 +768,7 @@ var HistoriquePage = (function () {
     }
     HistoriquePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-historique',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/historique/historique.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Historique\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page11">\n    <ion-list id="historique-list10">\n        <ion-item-sliding>\n            <ion-item color="none" id="historique-list-item32">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n            <ion-icon name="share"></ion-icon>\n          </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n            <ion-icon name="trash"></ion-icon>\n          </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/historique/historique.html"*/
+            selector: 'page-historique',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/historique/historique.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Historique\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page11">\n    <ion-list id="historique-list10">\n        <ion-item-sliding>\n            <ion-item color="none" id="historique-list-item32">\n                <ion-thumbnail item-left>\n                    <img />\n                </ion-thumbnail>\n                <h2>\n                    Item\n                </h2>\n            </ion-item>\n            <ion-item-options side="left">\n                <button ion-button color="primary">\n            <ion-icon name="share"></ion-icon>\n          </button>\n            </ion-item-options>\n            <ion-item-options side="right">\n                <button ion-button color="danger">\n            <ion-icon name="trash"></ion-icon>\n          </button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/historique/historique.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], HistoriquePage);
@@ -809,7 +808,7 @@ var CorbeillePage = (function () {
     };
     CorbeillePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-corbeille',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/corbeille/corbeille.html"*/'<ion-header>\n    <ion-navbar hideWhen="hide">\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Corbeille\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page12">\n    <!-- <ion-list id="corbeille-list15">\n    <ion-item-sliding>\n      <ion-item color="none" id="corbeille-list-item41">\n        <ion-thumbnail item-left>\n          <img />\n        </ion-thumbnail>\n        <h2>\n          Item\n        </h2>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button color="positive"></button>\n        <button ion-button color="assertive"></button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list> -->\n\n    <maps #map class="hide"></maps>\n    <button ion-button (click)="hideelem()">Hide Div</button>\n    <div *ngIf="hide"> here your content</div>\n\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/corbeille/corbeille.html"*/
+            selector: 'page-corbeille',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/corbeille/corbeille.html"*/'<ion-header>\n    <ion-navbar hideWhen="hide">\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>\n            Corbeille\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding id="page12">\n    <!-- <ion-list id="corbeille-list15">\n    <ion-item-sliding>\n      <ion-item color="none" id="corbeille-list-item41">\n        <ion-thumbnail item-left>\n          <img />\n        </ion-thumbnail>\n        <h2>\n          Item\n        </h2>\n      </ion-item>\n      <ion-item-options side="left">\n        <button ion-button color="positive"></button>\n        <button ion-button color="assertive"></button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list> -->\n\n    <maps #map class="hide"></maps>\n    <button ion-button (click)="hideelem()">Hide Div</button>\n    <div *ngIf="hide"> here your content</div>\n\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/corbeille/corbeille.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], CorbeillePage);
@@ -844,7 +843,7 @@ var NotificationPage = (function () {
     }
     NotificationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-notification',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/notification/notification.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Notification\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding id="page14">\n  <form id="notification-form6">\n    <ion-item id="notification-toggle2">\n      <ion-label>\n        Toggle\n      </ion-label>\n      <ion-toggle color="positive" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item id="notification-range2">\n      <ion-range min="0" max="100" step="1" color="positive" value="50">\n        <ion-label range-left>\n          Range\n        </ion-label>\n      </ion-range>\n    </ion-item>\n    <ion-item id="notification-radio2">\n      <ion-label>\n        Radio\n      </ion-label>\n      <ion-radio></ion-radio>\n    </ion-item>\n    <ion-item id="notification-checkbox2">\n      <ion-label>\n        Checkbox\n      </ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/notification/notification.html"*/
+            selector: 'page-notification',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/notification/notification.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Notification\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding id="page14">\n  <form id="notification-form6">\n    <ion-item id="notification-toggle2">\n      <ion-label>\n        Toggle\n      </ion-label>\n      <ion-toggle color="positive" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item id="notification-range2">\n      <ion-range min="0" max="100" step="1" color="positive" value="50">\n        <ion-label range-left>\n          Range\n        </ion-label>\n      </ion-range>\n    </ion-item>\n    <ion-item id="notification-radio2">\n      <ion-label>\n        Radio\n      </ion-label>\n      <ion-radio></ion-radio>\n    </ion-item>\n    <ion-item id="notification-checkbox2">\n      <ion-label>\n        Checkbox\n      </ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/notification/notification.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], NotificationPage);
@@ -879,7 +878,7 @@ var ConfigurationPage = (function () {
     }
     ConfigurationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-configuration',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/configuration/configuration.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Configuration\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding id="page13">\n  <form id="configuration-form5">\n    <ion-item id="configuration-toggle1">\n      <ion-label>\n        Toggle\n      </ion-label>\n      <ion-toggle color="positive" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item id="configuration-range1">\n      <ion-range min="0" max="100" step="1" color="positive" value="50">\n        <ion-label range-left>\n          Range\n        </ion-label>\n      </ion-range>\n    </ion-item>\n    <ion-item id="configuration-radio1">\n      <ion-label>\n        Radio\n      </ion-label>\n      <ion-radio></ion-radio>\n    </ion-item>\n    <ion-item id="configuration-checkbox1">\n      <ion-label>\n        Checkbox\n      </ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/configuration/configuration.html"*/
+            selector: 'page-configuration',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/configuration/configuration.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Configuration\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding id="page13">\n  <form id="configuration-form5">\n    <ion-item id="configuration-toggle1">\n      <ion-label>\n        Toggle\n      </ion-label>\n      <ion-toggle color="positive" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item id="configuration-range1">\n      <ion-range min="0" max="100" step="1" color="positive" value="50">\n        <ion-label range-left>\n          Range\n        </ion-label>\n      </ion-range>\n    </ion-item>\n    <ion-item id="configuration-radio1">\n      <ion-label>\n        Radio\n      </ion-label>\n      <ion-radio></ion-radio>\n    </ion-item>\n    <ion-item id="configuration-checkbox1">\n      <ion-label>\n        Checkbox\n      </ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n  </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/configuration/configuration.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], ConfigurationPage);
@@ -896,8 +895,8 @@ var ConfigurationPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddDeliveryProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -966,8 +965,8 @@ var AddDeliveryProvider = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddAdressProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1071,8 +1070,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_configuration_configuration__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_storage__ = __webpack_require__(697);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_content_drawer_content_drawer__ = __webpack_require__(701);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_auth_auth__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_auth_auth__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_adduser_adduser__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_sendpackage_sendpackage__ = __webpack_require__(702);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_add_delivery_add_delivery__ = __webpack_require__(366);
@@ -1295,7 +1294,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
     ], MyApp.prototype, "navCtrl", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/app/app.html"*/'<ion-menu [content]="mainContent">\n    <ion-content id="side-menu21" style="background-color:#F6F6F6;">\n        <div class="spacer" style="width:268px;height:36px;" id="menu-spacer1"></div>\n        <ion-list id="menu-list6">\n            <ion-item color="none" menuClose="" on-click="goToProfile()" id="menu-list-item16">\n                <ion-avatar item-left>\n                    <img />\n                </ion-avatar>\n                <h2>\n                    User\n                </h2>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item17">\n                <ion-icon name="home" item-left></ion-icon>\n                Acceuil\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToHistorique()" id="menu-list-item19">\n                <ion-icon name="archive" item-left></ion-icon>\n                Historique\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToAdresses()" id="menu-list-item18">\n                <ion-icon name="locate" item-left></ion-icon>\n                Mes Adresses\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToCorbeille()" id="menu-list-item22">\n                <ion-icon name="trash" item-left></ion-icon>\n                Corbeille\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer2"></div>\n        <ion-list id="menu-list7">\n            <ion-item color="none" menuClose="" on-click="goToNotification()" id="menu-list-item23">\n                <ion-icon name="notifications" item-left></ion-icon>\n                Notification\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToConfiguration()" id="menu-list-item24">\n                <ion-icon name="settings" item-left></ion-icon>\n                Configuration\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer13"></div>\n        <ion-list id="menu-list22">\n            <ion-item color="assertive" id="menu-list-item64" on-click="goTotuto()">\n                <ion-icon name="log-out" item-left></ion-icon>\n                Deconexion\n            </ion-item>\n        </ion-list>\n    </ion-content>\n</ion-menu>\n\n<ion-nav #mainContent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/app/app.html"*/'<ion-menu [content]="mainContent">\n    <ion-content id="side-menu21" style="background-color:#F6F6F6;">\n        <div class="spacer" style="width:268px;height:36px;" id="menu-spacer1"></div>\n        <ion-list id="menu-list6">\n            <ion-item color="none" menuClose="" on-click="goToProfile()" id="menu-list-item16">\n                <ion-avatar item-left>\n                    <img />\n                </ion-avatar>\n                <h2>\n                    User\n                </h2>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item17">\n                <ion-icon name="home" item-left></ion-icon>\n                Acceuil\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToHistorique()" id="menu-list-item19">\n                <ion-icon name="archive" item-left></ion-icon>\n                Historique\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToAdresses()" id="menu-list-item18">\n                <ion-icon name="locate" item-left></ion-icon>\n                Mes Adresses\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToCorbeille()" id="menu-list-item22">\n                <ion-icon name="trash" item-left></ion-icon>\n                Corbeille\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer2"></div>\n        <ion-list id="menu-list7">\n            <ion-item color="none" menuClose="" on-click="goToNotification()" id="menu-list-item23">\n                <ion-icon name="notifications" item-left></ion-icon>\n                Notification\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n            <ion-item color="none" menuClose="" on-click="goToConfiguration()" id="menu-list-item24">\n                <ion-icon name="settings" item-left></ion-icon>\n                Configuration\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer13"></div>\n        <ion-list id="menu-list22">\n            <ion-item color="assertive" id="menu-list-item64" on-click="goTotuto()">\n                <ion-icon name="log-out" item-left></ion-icon>\n                Deconexion\n            </ion-item>\n        </ion-list>\n    </ion-content>\n</ion-menu>\n\n<ion-nav #mainContent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -1342,7 +1341,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/home/home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            DDW\n        </ion-title>\n        <ion-buttons end>\n            <button (click)="map.centerLocation()">\n        <ion-icon  name="navigate"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n    <div class="map-wrapper">\n\n        <maps #map [dispalycomponent]="dispalycomponent">\n\n        </maps>\n\n        <!-- <div *ngIf="hide" class="center imgcenter">\n            <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n        </div> -->\n        <!-- <sendpackage [mapstop]="mapstop" *ngIf="!hide">\n            <div class="content"></div>\n        </sendpackage> -->\n    </div>\n\n    <!-- <div class="bottom request-controls">\n        <ion-row>\n            <ion-col>\n\n                <button [hidden]="isPickupRequested" ion-button primary>Envoyer un colis</button>\n                <button [hidden]="!isPickupRequested" ion-button primary>Cancel Pickup</button>\n\n            </ion-col>\n        </ion-row>\n        <div class="spacer" style="width:300px;height:30px;" id="spacer"></div>\n\n        <!-- <ion-row>\n            <ion-col>\n                PICKUP TIME IS APPROXIMATELY {{timeTillArrival}} MN\n            </ion-col>\n        </ion-row> \n    </div> -->\n</ion-content>\n<content-drawer [options]="drawerOptions">\n    <div class="content">\n    </div>\n</content-drawer>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/home/home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            DDW\n        </ion-title>\n        <ion-buttons end>\n            <button (click)="map.centerLocation()">\n        <ion-icon  name="navigate"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n    <div class="map-wrapper">\n\n        <maps #map [dispalycomponent]="dispalycomponent">\n\n        </maps>\n\n        <!-- <div *ngIf="hide" class="center imgcenter">\n            <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n        </div> -->\n        <!-- <sendpackage [mapstop]="mapstop" *ngIf="!hide">\n            <div class="content"></div>\n        </sendpackage> -->\n    </div>\n\n    <!-- <div class="bottom request-controls">\n        <ion-row>\n            <ion-col>\n\n                <button [hidden]="isPickupRequested" ion-button primary>Envoyer un colis</button>\n                <button [hidden]="!isPickupRequested" ion-button primary>Cancel Pickup</button>\n\n            </ion-col>\n        </ion-row>\n        <div class="spacer" style="width:300px;height:30px;" id="spacer"></div>\n\n        <!-- <ion-row>\n            <ion-col>\n                PICKUP TIME IS APPROXIMATELY {{timeTillArrival}} MN\n            </ion-col>\n        </ion-row> \n    </div> -->\n</ion-content>\n<content-drawer [options]="drawerOptions">\n    <div class="content">\n    </div>\n</content-drawer>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/home/home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], HomePage);
@@ -1350,6 +1349,53 @@ var HomePage = (function () {
 }());
 
 //# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 56:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AuthProvider = (function () {
+    function AuthProvider(http) {
+        this.http = http;
+        this.url = 'http://147.135.136.78:8052/user/';
+    }
+    AuthProvider.prototype.login = function (login, password) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+        headers.append('Content-Type', 'application/json');
+        headers.append('cache-control', 'no-cache');
+        return this.http.post(this.url + 'signin?login=' + login + '&password=' + password, { headers: headers });
+        /*JSON.stringify(credentials), {headers: headers});*/
+    };
+    AuthProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+    ], AuthProvider);
+    return AuthProvider;
+}());
+
+//# sourceMappingURL=auth.js.map
 
 /***/ }),
 
@@ -1510,7 +1556,7 @@ var MapsComponent = (function () {
     ], MapsComponent.prototype, "dispalycomponent", void 0);
     MapsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'maps',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/maps/maps.html"*/'<!-- Generated template for the MapComponent component -->\n<div class="wrapper">\n    <input id="pac-input" class="controls" type="text" placeholder="Chercher une place">\n    <div id="map"></div>\n    <div *ngIf="hide && dispalycomponent == \'sendpackage\'" class="center imgcenter">\n        <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n    </div>\n    <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == \'sendpackage\'">\n        <div class="content"></div>\n    </sendpackage>\n    <addadress [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == \'addadress\'">\n        <div class="content"></div>\n    </addadress>\n\n    <!-- <sendpackage [map]="map"> </sendpackage> -->\n    <!-- <pickup [map]="map" [isPinSet]="isMapIdle" [isPickupRequested]="isPickupRequested" [destination]="destination" (updatedPickupLocation)="updatePickupLocation($event)">\n    </pickup>\n\n    <available-cars [map]="map" [isPickupRequested]="isPickupRequested">\n    </available-cars>\n\n    <pickup-car [map]="map" [isPickupRequested]="isPickupRequested" [pickupLocation]="currentLocation" [destination]="destination">\n    </pickup-car> -->\n</div>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/maps/maps.html"*/
+            selector: 'maps',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/components/maps/maps.html"*/'<!-- Generated template for the MapComponent component -->\n<div class="wrapper">\n    <input id="pac-input" class="controls" type="text" placeholder="Chercher une place">\n    <div id="map"></div>\n    <div *ngIf="hide && dispalycomponent == \'sendpackage\'" class="center imgcenter">\n        <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n    </div>\n    <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == \'sendpackage\'">\n        <div class="content"></div>\n    </sendpackage>\n    <addadress [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == \'addadress\'">\n        <div class="content"></div>\n    </addadress>\n\n    <!-- <sendpackage [map]="map"> </sendpackage> -->\n    <!-- <pickup [map]="map" [isPinSet]="isMapIdle" [isPickupRequested]="isPickupRequested" [destination]="destination" (updatedPickupLocation)="updatePickupLocation($event)">\n    </pickup>\n\n    <available-cars [map]="map" [isPickupRequested]="isPickupRequested">\n    </available-cars>\n\n    <pickup-car [map]="map" [isPickupRequested]="isPickupRequested" [pickupLocation]="currentLocation" [destination]="destination">\n    </pickup-car> -->\n</div>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/components/maps/maps.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
@@ -1615,7 +1661,7 @@ var ContentDrawer = (function () {
     ], ContentDrawer.prototype, "options", void 0);
     ContentDrawer = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'content-drawer',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/content-drawer/content-drawer.html"*/'<ion-header>\n    <ion-icon name="arrow-dropup-circle" id="icondrawer"></ion-icon>\n</ion-header>\n<ion-content>\n    <ng-content></ng-content>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/content-drawer/content-drawer.html"*/
+            selector: 'content-drawer',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/components/content-drawer/content-drawer.html"*/'<ion-header>\n    <ion-icon name="arrow-dropup-circle" id="icondrawer"></ion-icon>\n</ion-header>\n<ion-content>\n    <ng-content></ng-content>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/components/content-drawer/content-drawer.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Renderer */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* DomController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], ContentDrawer);
@@ -1634,6 +1680,7 @@ var ContentDrawer = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_add_delivery_add_delivery__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1646,10 +1693,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SendpackageComponent = (function () {
-    function SendpackageComponent(alertCtrl, adddeliveryP) {
+    function SendpackageComponent(alertCtrl, adddeliveryP, auth) {
         this.alertCtrl = alertCtrl;
         this.adddeliveryP = adddeliveryP;
+        this.auth = auth;
         this.srcPosition = new google.maps.LatLng();
         this.destPosition = new google.maps.LatLng();
         this.date = new Date();
@@ -1677,7 +1726,7 @@ var SendpackageComponent = (function () {
         this.valPack = 10.1;
         console.log(this.valPack);
         console.log(this.date);
-        this.adddeliveryP.adddelivery((this.srcPosition.lat()).toString(), (this.srcPosition.lng()).toString(), this.date, "this.userId", "this.userId", this.date, (this.destPosition.lat()).toString(), (this.destPosition.lng()).toString(), this.timePack, this.pricePack, this.typePack, this.valPack, this.wieghtPack, this.sizePack);
+        this.adddeliveryP.adddelivery((this.srcPosition.lat()).toString(), (this.srcPosition.lng()).toString(), this.date, this.auth.userData.data[0].idUser, this.auth.userData.data[0].idUser, this.date, (this.destPosition.lat()).toString(), (this.destPosition.lng()).toString(), this.timePack, this.pricePack, this.typePack, this.valPack, this.wieghtPack, this.sizePack);
     };
     SendpackageComponent.prototype.prevStep = function () {
         this.index--;
@@ -1987,11 +2036,12 @@ var SendpackageComponent = (function () {
     ], SendpackageComponent.prototype, "map", void 0);
     SendpackageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'sendpackage',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/sendpackage/sendpackage.html"*/'<!-- Generated template for the SendpackageComponent component -->\n<div id="locator1" *ngIf="index == 0"></div>\n<div id="locator2" *ngIf="index == 1"></div>\n<ion-fab class="buttonfab" bottom right>\n    <button ion-fab (click)="nextStep()" *ngIf=" index < 6"><ion-icon name="arrow-forward"></ion-icon></button>\n</ion-fab>\n<ion-fab class="buttonfab" bottom left>\n    <button ion-fab (click)="prevStep()" *ngIf="index > 0 && index < 6"><ion-icon name="arrow-back"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/sendpackage/sendpackage.html"*/
+            selector: 'sendpackage',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/components/sendpackage/sendpackage.html"*/'<!-- Generated template for the SendpackageComponent component -->\n<div id="locator1" *ngIf="index == 0"></div>\n<div id="locator2" *ngIf="index == 1"></div>\n<ion-fab class="buttonfab" bottom right>\n    <button ion-fab (click)="nextStep()" *ngIf=" index < 6"><ion-icon name="arrow-forward"></ion-icon></button>\n</ion-fab>\n<ion-fab class="buttonfab" bottom left>\n    <button ion-fab (click)="prevStep()" *ngIf="index > 0 && index < 6"><ion-icon name="arrow-back"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/components/sendpackage/sendpackage.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__providers_add_delivery_add_delivery__["a" /* AddDeliveryProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_add_delivery_add_delivery__["a" /* AddDeliveryProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_add_delivery_add_delivery__["a" /* AddDeliveryProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _c || Object])
     ], SendpackageComponent);
     return SendpackageComponent;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=sendpackage.js.map
@@ -2006,6 +2056,7 @@ var SendpackageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_add_address_add_address__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2018,10 +2069,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+__WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */];
 var AddadressComponent = (function () {
-    function AddadressComponent(alertCtrl, addadressP) {
+    function AddadressComponent(alertCtrl, addadressP, auth) {
         this.alertCtrl = alertCtrl;
         this.addadressP = addadressP;
+        this.auth = auth;
         this.adrPosition = new google.maps.LatLng();
         this.date = new Date();
         console.log('Hello AddadressComponent Component');
@@ -2236,7 +2290,7 @@ var AddadressComponent = (function () {
         alert.present();
     };
     AddadressComponent.prototype.addAdress = function () {
-        this.addadressP.addadress((this.adrPosition.lat()).toString(), (this.adrPosition.lng()).toString(), this.date, "", "", this.date, this.contactLabel, this.contactName, this.contactNum, this.typeadr, this.sharedtoNum);
+        this.addadressP.addadress((this.adrPosition.lat()).toString(), (this.adrPosition.lng()).toString(), this.date, this.auth.userData.data[0].idUser, this.auth.userData.data[0].idUser, this.date, this.contactLabel, this.contactName, this.contactNum, this.typeadr, this.sharedtoNum);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
@@ -2248,9 +2302,9 @@ var AddadressComponent = (function () {
     ], AddadressComponent.prototype, "map", void 0);
     AddadressComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'addadress',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/addadress/addadress.html"*/'<!-- Generated template for the AddadressComponent component -->\n<div>\n    <div id="locator1"></div>\n    <ion-fab class="buttonfab" bottom right>\n        <button ion-fab (click)="nextStep()"><ion-icon name="arrow-forward"></ion-icon></button>\n    </ion-fab>\n</div>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/components/addadress/addadress.html"*/
+            selector: 'addadress',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/components/addadress/addadress.html"*/'<!-- Generated template for the AddadressComponent component -->\n<div>\n    <div id="locator1"></div>\n    <ion-fab class="buttonfab" bottom right>\n        <button ion-fab (click)="nextStep()"><ion-icon name="arrow-forward"></ion-icon></button>\n    </ion-fab>\n</div>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/components/addadress/addadress.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__providers_add_address_add_address__["a" /* AddAdressProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__providers_add_address_add_address__["a" /* AddAdressProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]])
     ], AddadressComponent);
     return AddadressComponent;
 }());
@@ -2293,7 +2347,7 @@ var RealtimenavPage = (function () {
     };
     RealtimenavPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-realtimenav',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/realtimenav/realtimenav.html"*/'<!--\n  Generated template for the RealtimenavPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>realtimenav</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/realtimenav/realtimenav.html"*/,
+            selector: 'page-realtimenav',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/realtimenav/realtimenav.html"*/'<!--\n  Generated template for the RealtimenavPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>realtimenav</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/realtimenav/realtimenav.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], RealtimenavPage);
@@ -2301,53 +2355,6 @@ var RealtimenavPage = (function () {
 }());
 
 //# sourceMappingURL=realtimenav.js.map
-
-/***/ }),
-
-/***/ 79:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var AuthProvider = (function () {
-    function AuthProvider(http) {
-        this.http = http;
-        this.url = 'http://147.135.136.78:8052/user/';
-    }
-    AuthProvider.prototype.login = function (login, password) {
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        headers.append('Content-Type', 'application/json');
-        headers.append('cache-control', 'no-cache');
-        return this.http.post(this.url + 'signin?login=' + login + '&password=' + password, { headers: headers });
-        /*JSON.stringify(credentials), {headers: headers});*/
-    };
-    AuthProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
-    ], AuthProvider);
-    return AuthProvider;
-}());
-
-//# sourceMappingURL=auth.js.map
 
 /***/ }),
 
@@ -2382,7 +2389,7 @@ var ValidnumPage = (function () {
     };
     ValidnumPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-validnum',template:/*ion-inline-start:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/validnum/validnum.html"*/'<ion-content padding id="page7">\n    <form id="validnum-form5">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="validnum-spacer11"></div>\n        <div id="validnum-markdown2" class="show-list-numbers-and-dots">\n            <p style="color:#000000;">\n                Enter le code de\n                <strong>\n          Validation\n        </strong>\n            </p>\n        </div>\n        <ion-list id="validnum-list9">\n            <ion-item id="validnum-input12">\n                <ion-label floating>\n                    Code de validation\n                </ion-label>\n                <ion-input type="text" name="Code de validation"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="validnum-spacer12"></div>\n        <button id="validnum-button9" ion-button color="positive" block on-click="goToSetpic()">\n      Verifier\n    </button>\n        <button id="validnum-button12" ion-button clear color="positive" block>\n      Renvoyer le code de validation\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Dropbox/app/DDWapp2/src/pages/validnum/validnum.html"*/
+            selector: 'page-validnum',template:/*ion-inline-start:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/validnum/validnum.html"*/'<ion-content padding id="page7">\n    <form id="validnum-form5">\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n        <div class="spacer" style="width:300px;height:10px;" id="validnum-spacer11"></div>\n        <div id="validnum-markdown2" class="show-list-numbers-and-dots">\n            <p style="color:#000000;">\n                Enter le code de\n                <strong>\n          Validation\n        </strong>\n            </p>\n        </div>\n        <ion-list id="validnum-list9">\n            <ion-item id="validnum-input12">\n                <ion-label floating>\n                    Code de validation\n                </ion-label>\n                <ion-input type="text" name="Code de validation"></ion-input>\n            </ion-item>\n        </ion-list>\n        <div class="spacer" style="width:300px;height:10px;" id="validnum-spacer12"></div>\n        <button id="validnum-button9" ion-button color="positive" block on-click="goToSetpic()">\n      Verifier\n    </button>\n        <button id="validnum-button12" ion-button clear color="positive" block>\n      Renvoyer le code de validation\n    </button>\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/wsslmac/Desktop/dotwaysApp/src/pages/validnum/validnum.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], ValidnumPage);

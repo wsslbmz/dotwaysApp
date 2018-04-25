@@ -2,6 +2,7 @@ import { Component, Input, OnChanges, Output, EventEmitter, OnInit } from '@angu
 import { AlertController } from 'ionic-angular';
 import { MapsComponent } from '../maps/maps';
 import { AddDeliveryProvider } from '../../providers/add-delivery/add-delivery';
+import { AuthProvider } from '../../providers/auth/auth';
 
 declare var google : any;
 
@@ -35,7 +36,7 @@ export class SendpackageComponent implements OnChanges {
   public date= new Date();
 
 
-  constructor(private alertCtrl: AlertController,public adddeliveryP : AddDeliveryProvider) {
+  constructor(private alertCtrl: AlertController,public adddeliveryP : AddDeliveryProvider , public auth : AuthProvider) {
     console.log('Hello SendpackageComponent Component');
     this.hide1=false;
     this.hide2=true;
@@ -64,8 +65,8 @@ addDelivery(){
   this.adddeliveryP.adddelivery((this.srcPosition.lat()).toString(),
                                 (this.srcPosition.lng()).toString(),
                                 this.date,
-                                "this.userId",
-                                "this.userId",
+                                this.auth.userData.data[0].idUser,
+                                this.auth.userData.data[0].idUser,
                                 this.date,
                                 (this.destPosition.lat()).toString(),
                                 (this.destPosition.lng()).toString(),
