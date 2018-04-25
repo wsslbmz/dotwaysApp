@@ -12,6 +12,7 @@ import { HistoriquePage } from '../pages/historique/historique';
 import { CorbeillePage } from '../pages/corbeille/corbeille';
 import { NotificationPage } from '../pages/notification/notification';
 import { ConfigurationPage } from '../pages/configuration/configuration';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,12 +21,13 @@ export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
     rootPage:any = LoginPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,public notif : LocalNotifications) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      this.noticationShow();
     });
   }
   goToAdresses(params){
@@ -50,4 +52,16 @@ export class MyApp {
     if (!params) params = {};
     this.navCtrl.setRoot(ProfilePage);
   }
+  noticationShow(){
+    this.notif.schedule({
+      id :1,
+      title:'hi there',
+      text:'welcome',
+      trigger : {at : new Date(new Date().getTime()+ 5 * 1000)},
+      icon : '../assets/imgs/logo.png'
+    })
+  }
+
+ 
+
 }

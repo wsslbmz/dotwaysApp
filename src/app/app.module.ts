@@ -8,11 +8,11 @@ import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { FileTransfer} from '@ionic-native/file-transfer';
 import { Camera } from '@ionic-native/camera';
+import { LocalNotifications } from "@ionic-native/local-notifications"
 
 import { MyApp } from './app.component';
 import { MapsComponent } from '../components/maps/maps';
 import { HomePage } from '../pages/home/home';
-
 
 import { AdressesPriveePage } from '../pages/adresses-privee/adresses-privee';
 import { AdressesPubliquePage } from '../pages/adresses-publique/adresses-publique';
@@ -111,7 +111,8 @@ import { AddAdressProvider } from '../providers/add-address/add-address';
     GooglePlus,
     Facebook,
     AddDeliveryProvider,
-    AddAdressProvider
+    AddAdressProvider,
+    LocalNotifications
   ]
 })
 export class AppModule {}
