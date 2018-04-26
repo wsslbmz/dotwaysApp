@@ -43,6 +43,7 @@ import { AddadressPage } from '../pages/addadress/addadress';
 import { AddadressComponent } from '../components/addadress/addadress';
 import { RealtimenavPage } from '../pages/realtimenav/realtimenav';
 import { AddAdressProvider } from '../providers/add-address/add-address';
+import { GetHisotiqueProvider } from '../providers/get-hisotique/get-hisotique';
 
 
 @NgModule({
@@ -112,7 +113,8 @@ import { AddAdressProvider } from '../providers/add-address/add-address';
     Facebook,
     AddDeliveryProvider,
     AddAdressProvider,
-    LocalNotifications
+    LocalNotifications,
+    GetHisotiqueProvider
   ]
 })
 export class AppModule {}

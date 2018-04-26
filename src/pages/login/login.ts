@@ -14,8 +14,6 @@ import { ValidnumPage } from '../validnum/validnum';
 import 'rxjs/add/operator/toPromise';
 
 
-
-
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
@@ -34,11 +32,14 @@ export class LoginPage {
   
 
   constructor(public navCtrl: NavController, private gp : GooglePlus ,private fb: Facebook , public navParams: NavParams, 
-				public loadingCtrl: LoadingController, public auth: AuthProvider) {
+				public loadingCtrl: LoadingController, public auth: AuthProvider ) {
+
+
 this.userForm = new FormGroup({
           loginCtl :new FormControl('',[Validators.required,Validators.minLength(3)]),
           passwordCtl :new FormControl('',[Validators.required,Validators.minLength(3)])
 })
+
   }
   goToHome(params){
     if (!params) params = {};
@@ -53,6 +54,9 @@ this.userForm = new FormGroup({
     if (!params) params = {};
     this.navCtrl.push(ValidnumPage);
   }
+  
+
+
   
 	authlogin(){
 
