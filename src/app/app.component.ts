@@ -60,6 +60,7 @@ export class MyApp {
       trigger : {at : new Date(new Date().getTime()+ 5 * 1000)},
       icon : '../assets/imgs/logo.png'
     })
+    console.log("notification show after 5 sec")
   }
 
  

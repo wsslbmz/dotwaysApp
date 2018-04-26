@@ -3,7 +3,7 @@
     <name>DeliveryDotways</name>
     <description>DDW</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.1.11:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -84,10 +84,10 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
-    <engine name="android" spec="7.0.0" />
     <plugin name="cordova-plugin-googleplus" spec="^5.3.0" />
     <plugin name="cordova-plugin-facebook4" spec="^1.10.0">
         <variable name="APP_ID" value="2151809161716884" />
         <variable name="APP_NAME" value="DDW" />
     </plugin>
+    <allow-navigation href="http://192.168.1.11:8100" />
 </widget>
