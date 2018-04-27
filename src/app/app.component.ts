@@ -13,6 +13,8 @@ import { CorbeillePage } from '../pages/corbeille/corbeille';
 import { NotificationPage } from '../pages/notification/notification';
 import { ConfigurationPage } from '../pages/configuration/configuration';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { RealtimenavPage } from '../pages/realtimenav/realtimenav';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -51,6 +53,10 @@ export class MyApp {
   }goToProfile(params){
     if (!params) params = {};
     this.navCtrl.setRoot(ProfilePage);
+  }
+  goToRealTime(params){
+  if (!params) params = {};
+  this.navCtrl.setRoot(RealtimenavPage);
   }
   noticationShow(){
     this.notif.schedule({

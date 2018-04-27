@@ -85,20 +85,15 @@ var Register2Page = (function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__validnum_validnum__["a" /* ValidnumPage */]);
         this.add();
         this.auth.login(this.login, this.password).map(function (res) { return res.json(); }).subscribe(function (res) {
-            _this.loading.dismiss();
             if (res.success) {
                 _this.auth.login(_this.login, _this.password)
                     .toPromise()
                     .then(function (response) {
                     _this.auth.userData = response.json();
-                    console.log('API Response : ', response.json());
-                    console.log('API Response2 : ', response);
                 });
                 _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
             }
-        }, function (err) {
-            _this.loading.dismiss();
-        });
+        }, function (err) { console.log("hhhh"); });
     };
     Register2Page.prototype.goToHome = function (params) {
         if (!params)
@@ -109,9 +104,10 @@ var Register2Page = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-register2',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\register2\register2.html"*/'<ion-content padding id="page10">\n\n    <form id="register2-form4">\n\n        <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />\n\n        <div class="spacer" style="width:300px;height:10px;" id="register2-spacer9"></div>\n\n        <div id="register2-markdown1" class="show-list-numbers-and-dots">\n\n        </div>\n\n        <ion-list id="register2-list8">\n\n            <ion-item id="register2-input8">\n\n                <ion-label floating>\n\n                    Numero Telephone\n\n                </ion-label>\n\n                <ion-input [(ngModel)]="mobileUser" type="tel" name="mobileUser"></ion-input>\n\n            </ion-item>\n\n            <ion-item id="register2-input10">\n\n                <ion-label floating>\n\n                    Email\n\n                </ion-label>\n\n                <ion-input [(ngModel)]="emailUser" type="email" name="emailUser"></ion-input>\n\n            </ion-item>\n\n        </ion-list>\n\n        <div class="spacer" style="width:300px;height:57px;" id="register2-spacer10"></div>\n\n        <button id="register2-button10" ion-button color="positive" block on-click="goToValidnum()">\n\n      Envoyer\n\n    </button>\n\n    </form>\n\n</ion-content>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\register2\register2.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_adduser_adduser__["a" /* AdduserProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__providers_adduser_adduser__["a" /* AdduserProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_adduser_adduser__["a" /* AdduserProvider */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _d || Object])
     ], Register2Page);
     return Register2Page;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=register2.js.map
@@ -1113,12 +1109,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_realtimenav_realtimenav__ = __webpack_require__(705);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_add_address_add_address__ = __webpack_require__(369);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_get_hisotique_get_hisotique__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_realtimenav_realtimenav__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_realtimenav_realtimenav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_40__components_realtimenav_realtimenav__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1186,7 +1185,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_29__components_content_drawer_content_drawer__["a" /* ContentDrawer */],
                 __WEBPACK_IMPORTED_MODULE_33__components_sendpackage_sendpackage__["a" /* SendpackageComponent */],
                 __WEBPACK_IMPORTED_MODULE_36__components_addadress_addadress__["a" /* AddadressComponent */],
-                __WEBPACK_IMPORTED_MODULE_37__pages_realtimenav_realtimenav__["a" /* RealtimenavPage */]
+                __WEBPACK_IMPORTED_MODULE_37__pages_realtimenav_realtimenav__["a" /* RealtimenavPage */],
+                __WEBPACK_IMPORTED_MODULE_40__components_realtimenav_realtimenav__["RealtimenavComponent"]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -1217,7 +1217,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_26__pages_notification_notification__["a" /* NotificationPage */],
                 __WEBPACK_IMPORTED_MODULE_35__pages_addadress_addadress__["a" /* AddadressPage */],
                 __WEBPACK_IMPORTED_MODULE_36__components_addadress_addadress__["a" /* AddadressComponent */],
-                __WEBPACK_IMPORTED_MODULE_37__pages_realtimenav_realtimenav__["a" /* RealtimenavPage */]
+                __WEBPACK_IMPORTED_MODULE_37__pages_realtimenav_realtimenav__["a" /* RealtimenavPage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1347,7 +1347,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
     ], MyApp.prototype, "navCtrl", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\app\app.html"*/'<ion-menu [content]="mainContent">\n\n    <ion-content id="side-menu21" style="background-color:#F6F6F6;">\n\n        <div class="spacer" style="width:268px;height:36px;" id="menu-spacer1"></div>\n\n        <ion-list id="menu-list6">\n\n            <ion-item color="none" menuClose="" on-click="goToProfile()" id="menu-list-item16">\n\n                <ion-avatar item-left>\n\n                    <img />\n\n                </ion-avatar>\n\n                <h2>\n\n                    User\n\n                </h2>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item17">\n\n                <ion-icon name="home" item-left></ion-icon>\n\n                Acceuil\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToHistorique()" id="menu-list-item19">\n\n                <ion-icon name="archive" item-left></ion-icon>\n\n                Historique\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToAdresses()" id="menu-list-item18">\n\n                <ion-icon name="locate" item-left></ion-icon>\n\n                Mes Adresses\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToCorbeille()" id="menu-list-item22">\n\n                <ion-icon name="trash" item-left></ion-icon>\n\n                Corbeille\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n        </ion-list>\n\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer2"></div>\n\n        <ion-list id="menu-list7">\n\n            <ion-item color="none" menuClose="" on-click="goToNotification()" id="menu-list-item23">\n\n                <ion-icon name="notifications" item-left></ion-icon>\n\n                Notification\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToConfiguration()" id="menu-list-item24">\n\n                <ion-icon name="settings" item-left></ion-icon>\n\n                Configuration\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n        </ion-list>\n\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer13"></div>\n\n        <ion-list id="menu-list22">\n\n            <ion-item color="assertive" id="menu-list-item64" on-click="goTotuto()">\n\n                <ion-icon name="log-out" item-left></ion-icon>\n\n                Deconexion\n\n            </ion-item>\n\n        </ion-list>\n\n    </ion-content>\n\n</ion-menu>\n\n\n\n<ion-nav #mainContent [root]="rootPage"></ion-nav>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\app\app.html"*/'<ion-menu [content]="mainContent">\n\n    <ion-content id="side-menu21" style="background-color:#F6F6F6;">\n\n        <div class="spacer" style="width:268px;height:36px;" id="menu-spacer1"></div>\n\n        <ion-list id="menu-list6">\n\n            <ion-item color="none" menuClose="" on-click="goToProfile()" id="menu-list-item16">\n\n                <ion-avatar item-left>\n\n                    <img />\n\n                </ion-avatar>\n\n                <h2>\n\n                    User\n\n                </h2>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item17">\n\n                <ion-icon name="home" item-left></ion-icon>\n\n                Acceuil\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToHistorique()" id="menu-list-item19">\n\n                <ion-icon name="archive" item-left></ion-icon>\n\n                Historique\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToAdresses()" id="menu-list-item18">\n\n                <ion-icon name="locate" item-left></ion-icon>\n\n                Mes Adresses\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToCorbeille()" id="menu-list-item22">\n\n                <ion-icon name="trash" item-left></ion-icon>\n\n                Corbeille\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToRealTime()" id="menu-list-item33">\n\n                <ion-icon name="compass" item-left></ion-icon>\n\n                Real time\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n        </ion-list>\n\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer2"></div>\n\n        <ion-list id="menu-list7">\n\n            <ion-item color="none" menuClose="" on-click="goToNotification()" id="menu-list-item23">\n\n                <ion-icon name="notifications" item-left></ion-icon>\n\n                Notification\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n            <ion-item color="none" menuClose="" on-click="goToConfiguration()" id="menu-list-item24">\n\n                <ion-icon name="settings" item-left></ion-icon>\n\n                Configuration\n\n                <ion-icon name="arrow-forward" item-right></ion-icon>\n\n            </ion-item>\n\n        </ion-list>\n\n        <div class="spacer" style="width:268px;height:23px;" id="menu-spacer13"></div>\n\n        <ion-list id="menu-list22">\n\n            <ion-item color="assertive" id="menu-list-item64" on-click="goTotuto()">\n\n                <ion-icon name="log-out" item-left></ion-icon>\n\n                Deconexion\n\n            </ion-item>\n\n        </ion-list>\n\n    </ion-content>\n\n</ion-menu>\n\n\n\n<ion-nav #mainContent [root]="rootPage"></ion-nav>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_12__ionic_native_local_notifications__["a" /* LocalNotifications */]])
     ], MyApp);
@@ -1424,8 +1424,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var HomePage = (function () {
-    function HomePage(alertCtrl) {
+    function HomePage(alertCtrl, nav) {
         this.alertCtrl = alertCtrl;
+        this.nav = nav;
         this.dispalycomponent = "sendpackage";
         this.hide = true;
         this.drawerOptions = {
@@ -1439,13 +1440,17 @@ var HomePage = (function () {
         this.hide = false;
         console.log(this.hide);
     };
+    HomePage.prototype.ionViewWillEnter = function () {
+        this.nav.swipeBackEnabled = false;
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\home\home.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            DDW\n\n        </ion-title>\n\n        <ion-buttons end>\n\n            <button (click)="map.centerLocation()">\n\n        <ion-icon  name="navigate"></ion-icon>\n\n      </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="map-wrapper">\n\n\n\n        <maps #map [dispalycomponent]="dispalycomponent">\n\n\n\n        </maps>\n\n\n\n        <!-- <div *ngIf="hide" class="center imgcenter">\n\n            <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n\n        </div> -->\n\n        <!-- <sendpackage [mapstop]="mapstop" *ngIf="!hide">\n\n            <div class="content"></div>\n\n        </sendpackage> -->\n\n    </div>\n\n\n\n    <!-- <div class="bottom request-controls">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <button [hidden]="isPickupRequested" ion-button primary>Envoyer un colis</button>\n\n                <button [hidden]="!isPickupRequested" ion-button primary>Cancel Pickup</button>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <div class="spacer" style="width:300px;height:30px;" id="spacer"></div>\n\n\n\n        <!-- <ion-row>\n\n            <ion-col>\n\n                PICKUP TIME IS APPROXIMATELY {{timeTillArrival}} MN\n\n            </ion-col>\n\n        </ion-row> \n\n    </div> -->\n\n</ion-content>\n\n<content-drawer [options]="drawerOptions">\n\n    <div class="content">\n\n    </div>\n\n</content-drawer>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -1609,7 +1614,7 @@ var MapsComponent = (function () {
     ], MapsComponent.prototype, "dispalycomponent", void 0);
     MapsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'maps',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\components\maps\maps.html"*/'<!-- Generated template for the MapComponent component -->\n\n<div class="wrapper">\n\n    <input id="pac-input" class="controls" type="text" placeholder="Chercher une place">\n\n    <div id="map"></div>\n\n    <div *ngIf="hide && dispalycomponent == \'sendpackage\'" class="center imgcenter">\n\n        <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n\n    </div>\n\n    <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == \'sendpackage\'">\n\n        <div class="content"></div>\n\n    </sendpackage>\n\n    <addadress [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == \'addadress\'">\n\n        <div class="content"></div>\n\n    </addadress>\n\n\n\n    <!-- <sendpackage [map]="map"> </sendpackage> -->\n\n    <!-- <pickup [map]="map" [isPinSet]="isMapIdle" [isPickupRequested]="isPickupRequested" [destination]="destination" (updatedPickupLocation)="updatePickupLocation($event)">\n\n    </pickup>\n\n\n\n    <available-cars [map]="map" [isPickupRequested]="isPickupRequested">\n\n    </available-cars>\n\n\n\n    <pickup-car [map]="map" [isPickupRequested]="isPickupRequested" [pickupLocation]="currentLocation" [destination]="destination">\n\n    </pickup-car> -->\n\n</div>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\components\maps\maps.html"*/
+            selector: 'maps',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\components\maps\maps.html"*/'<!-- Generated template for the MapComponent component -->\n\n<div class="wrapper">\n\n    <input id="pac-input" class="controls" type="text" placeholder="Chercher une place">\n\n    <div id="map"></div>\n\n    <div *ngIf="hide && dispalycomponent == \'sendpackage\'" class="center imgcenter">\n\n        <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />\n\n    </div>\n\n    <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == \'sendpackage\'">\n\n        <div class="content"></div>\n\n    </sendpackage>\n\n    <addadress [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == \'addadress\'">\n\n        <div class="content"></div>\n\n    </addadress>\n\n    <realtimenav [map]="map" [mapstop]="mapstop" *ngIf="dispalycomponent == \'realtime\'">\n\n        <div class="content"></div>\n\n    </realtimenav>\n\n\n\n    <!-- <sendpackage [map]="map"> </sendpackage> -->\n\n    <!-- <pickup [map]="map" [isPinSet]="isMapIdle" [isPickupRequested]="isPickupRequested" [destination]="destination" (updatedPickupLocation)="updatePickupLocation($event)">\n\n    </pickup>\n\n\n\n    <available-cars [map]="map" [isPickupRequested]="isPickupRequested">\n\n    </available-cars>\n\n\n\n    <pickup-car [map]="map" [isPickupRequested]="isPickupRequested" [pickupLocation]="currentLocation" [destination]="destination">\n\n    </pickup-car> -->\n\n</div>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\components\maps\maps.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
@@ -2383,27 +2388,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the RealtimenavPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 var RealtimenavPage = (function () {
-    function RealtimenavPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
+    function RealtimenavPage(alertCtrl, nav) {
+        this.alertCtrl = alertCtrl;
+        this.nav = nav;
+        this.dispalycomponent = "realtime";
+        this.hide = true;
+        this.drawerOptions = {
+            handleHeight: 20,
+            thresholdFromBottom: 200,
+            thresholdFromTop: 200,
+            bounceBack: true
+        };
     }
-    RealtimenavPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad RealtimenavPage');
+    RealtimenavPage.prototype.hideelem = function () {
+        this.hide = false;
+        console.log(this.hide);
+    };
+    RealtimenavPage.prototype.ionViewWillEnter = function () {
+        this.nav.swipeBackEnabled = false;
     };
     RealtimenavPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-realtimenav',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\realtimenav\realtimenav.html"*/'<!--\n\n  Generated template for the RealtimenavPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>realtimenav</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\realtimenav\realtimenav.html"*/,
+            selector: 'page-realtimenav',template:/*ion-inline-start:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\realtimenav\realtimenav.html"*/'<ion-content padding>\n\n    <div class="map-wrapper">\n\n\n\n        <maps #map [dispalycomponent]="dispalycomponent">\n\n\n\n        </maps>\n\n    </div>\n\n</ion-content>\n\n<content-drawer [options]="drawerOptions">\n\n    <div class="content">\n\n    </div>\n\n</content-drawer>'/*ion-inline-end:"C:\Users\HP\Documents\GitHub\dotwaysApp\src\pages\realtimenav\realtimenav.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]) === "function" && _b || Object])
     ], RealtimenavPage);
     return RealtimenavPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=realtimenav.js.map
@@ -2458,6 +2470,13 @@ var GetHisotiqueProvider = (function () {
 }());
 
 //# sourceMappingURL=get-hisotique.js.map
+
+/***/ }),
+
+/***/ 707:
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\HP\\Documents\\GitHub\\dotwaysApp\\src\\components\\realtimenav\\realtimenav.js'");
 
 /***/ }),
 

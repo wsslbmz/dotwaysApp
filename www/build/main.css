@@ -28051,6 +28051,42 @@ maps #pac-input {
   height: 40px;
 }
 
+realtimenav {
+  width: 100%;
+  height: 100%;
+}
+
+realtimenav #locator1 {
+  pointer-events: none;
+  background-image: url("../../assets/imgs/person_pin.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -70px;
+}
+
+realtimenav #locator2 {
+  pointer-events: none;
+  background-image: url("../../assets/imgs/dest_pin.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -70px;
+}
+
+realtimenav .buttonfab {
+  position: absolute;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 sendpackage {
   width: 100%;
   height: 100%;
@@ -28123,6 +28159,41 @@ page-home .center {
 }
 
 page-home .imgcenter {
+  text-align: center;
+  background: transparent;
+  pointer-events: visible;
+}
+
+page-realtimenav {
+  position: relative;
+}
+
+page-realtimenav .map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+page-realtimenav .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+page-realtimenav .request-controls {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f4f4f4));
+  background: linear-gradient(transparent, #f4f4f4);
+}
+
+page-realtimenav .center {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+}
+
+page-realtimenav .imgcenter {
   text-align: center;
   background: transparent;
   pointer-events: visible;

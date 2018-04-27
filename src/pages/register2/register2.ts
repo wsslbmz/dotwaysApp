@@ -42,24 +42,17 @@ add(){
     this.navCtrl.push(ValidnumPage);
     this.add();
     this.auth.login(this.login,this.password).map(res => res.json()).subscribe((res) => {
-
-			this.loading.dismiss();
-
 			if(res.success){
         this.auth.login(this.login, this.password)
         .toPromise()
 	    	.then((response) =>
         {
           this.auth.userData = response.json();
-          console.log('API Response : ', response.json());
-          console.log('API Response2 : ', response);
         })
 				this.navCtrl.setRoot(HomePage);
 			}
 
-		}, (err) => {
-			this.loading.dismiss();
-		});
+		}, (err) => {console.log("hhhh")		});
 
 
   }goToHome(params){
