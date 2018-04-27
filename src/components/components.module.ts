@@ -4,19 +4,22 @@ import { ContentDrawer } from './content-drawer/content-drawer';
 import { SendpackageComponent } from './sendpackage/sendpackage';
 import { DestinationAddresComponent } from './destination-addres/destination-addres';
 import { AddadressComponent } from './addadress/addadress';
+import { RealtimenavComponent } from './realtimenav/realtimenav';
 
 @NgModule({
 	declarations: [MapsComponent,
     ContentDrawer,
     SendpackageComponent,
     DestinationAddresComponent,
-    AddadressComponent],
+    AddadressComponent,
+    RealtimenavComponent],
 	imports: [],
 	exports: [MapsComponent,
     ContentDrawer,
     SendpackageComponent,
     DestinationAddresComponent,
-    AddadressComponent]
+    AddadressComponent,
+    RealtimenavComponent]
 
 })
 export class ComponentsModule {}

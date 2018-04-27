@@ -44,7 +44,7 @@ import { AddadressComponent } from '../components/addadress/addadress';
 import { RealtimenavPage } from '../pages/realtimenav/realtimenav';
 import { AddAdressProvider } from '../providers/add-address/add-address';
 import { GetHisotiqueProvider } from '../providers/get-hisotique/get-hisotique';
-
+import { RealtimenavComponent } from '../components/realtimenav/realtimenav';
 
 @NgModule({
   declarations: [
@@ -69,7 +69,8 @@ import { GetHisotiqueProvider } from '../providers/get-hisotique/get-hisotique';
     ContentDrawer,
     SendpackageComponent,
     AddadressComponent,
-    RealtimenavPage
+    RealtimenavPage,
+    RealtimenavComponent
   ],
   imports: [
     BrowserModule,
@@ -98,7 +99,8 @@ import { GetHisotiqueProvider } from '../providers/get-hisotique/get-hisotique';
     NotificationPage,
     AddadressPage,
     AddadressComponent,
-    RealtimenavPage
+    RealtimenavPage,
+    
   ],
   providers: [
     StatusBar,

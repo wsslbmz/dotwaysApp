@@ -26,7 +26,7 @@ getMsg()
       return new Promise(resolve => {
         this.http.get(this.url)
           .subscribe(data => {
-            this.liv = data;
+            this.liv = data.json();
             console.log("hhhhh",this.liv);
             resolve(this.liv);
           });

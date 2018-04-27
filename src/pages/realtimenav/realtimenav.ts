@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component , Input} from '@angular/core';
+import { AlertController, Nav } from 'ionic-angular';
+import { MapsComponent } from '../../components/maps/maps';
+import { SendpackageComponent } from '../../components/sendpackage/sendpackage';
+import { ContentDrawer } from '../../components/content-drawer/content-drawer';
 
-/**
- * Generated class for the RealtimenavPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @Component({
   selector: 'page-realtimenav',
@@ -14,11 +12,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RealtimenavPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    public hide :boolean;
+    drawerOptions: any;
+  public displaycomponent ;
+    
+    constructor(public alertCtrl: AlertController, public nav : Nav) {
+      this.hide =true;
+      this.drawerOptions = {
+        handleHeight: 20,
+        thresholdFromBottom: 200,
+        thresholdFromTop: 200,
+        bounceBack: true
+      };
+    }
+    dispalycomponent = "realtime";
+  
+    hideelem(){  
+      this.hide=false;
+      console.log(this.hide)
+    }
+    ionViewWillEnter() {
+      this.nav.swipeBackEnabled = false;
+      
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RealtimenavPage');
   }
-
-}
+  

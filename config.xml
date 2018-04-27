@@ -3,7 +3,7 @@
     <name>DeliveryDotways</name>
     <description>DDW</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.1.11:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -90,4 +90,5 @@
         <variable name="APP_NAME" value="DDW" />
     </plugin>
     <allow-navigation href="http://192.168.1.11:8100" />
+    <allow-navigation href="http://192.168.1.106:8100" />
 </widget>
