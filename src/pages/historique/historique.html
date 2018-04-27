@@ -11,12 +11,12 @@
 <ion-content padding id="page11">
     <ion-list id="historique-list10">
         <ion-item-sliding>
-            <ion-item color="none" id="historique-list-item32">
-                <ion-thumbnail item-left>
+            <ion-item color="none" id="historique-list-item32" *ngFor="let item of item">
+                <ion-thumbnail item-left   >
                     <img />
                 </ion-thumbnail>
                 <h2>
-                    Item
+                    {{item.title}}
                 </h2>
             </ion-item>
             <ion-item-options side="left">
