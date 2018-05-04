@@ -10,15 +10,10 @@
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-
 <ion-content>
-
     <div class="map-wrapper">
-
         <maps #map [dispalycomponent]="dispalycomponent">
-
         </maps>
-
         <!-- <div *ngIf="hide" class="center imgcenter">
             <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />
         </div> -->
@@ -26,18 +21,14 @@
             <div class="content"></div>
         </sendpackage> -->
     </div>
-
     <!-- <div class="bottom request-controls">
         <ion-row>
             <ion-col>
-
                 <button [hidden]="isPickupRequested" ion-button primary>Envoyer un colis</button>
                 <button [hidden]="!isPickupRequested" ion-button primary>Cancel Pickup</button>
-
             </ion-col>
         </ion-row>
         <div class="spacer" style="width:300px;height:30px;" id="spacer"></div>
-
         <!-- <ion-row>
             <ion-col>
                 PICKUP TIME IS APPROXIMATELY {{timeTillArrival}} MN

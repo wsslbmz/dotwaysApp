@@ -5,6 +5,7 @@
     <div *ngIf="hide && dispalycomponent == 'sendpackage'" class="center imgcenter">
         <img (click)="hideelem()" src="/assets/imgs/sendpackage.png" />
     </div>
+
     <sendpackage [map]="map" [mapstop]="mapstop" *ngIf="!hide && dispalycomponent == 'sendpackage'">
         <div class="content"></div>
     </sendpackage>

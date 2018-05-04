@@ -1,8 +1,9 @@
-import { Component , Input} from '@angular/core';
+import { Component , Input, ViewChild} from '@angular/core';
 import { AlertController, Nav } from 'ionic-angular';
 import { MapsComponent } from '../../components/maps/maps';
 import { SendpackageComponent } from '../../components/sendpackage/sendpackage';
 import { ContentDrawer } from '../../components/content-drawer/content-drawer';
+import { RealtimenavComponent } from '../../components/realtimenav/realtimenav';
 
 
 
@@ -11,7 +12,7 @@ import { ContentDrawer } from '../../components/content-drawer/content-drawer';
   templateUrl: 'realtimenav.html',
 })
 export class RealtimenavPage {
-
+@ViewChild('realtimenav') rt;
     public hide :boolean;
     drawerOptions: any;
   public displaycomponent ;
@@ -33,7 +34,13 @@ export class RealtimenavPage {
     }
     ionViewWillEnter() {
       this.nav.swipeBackEnabled = false;
-      
   }
+  ionViewDidLeave(){
+    this.rt.unsubscribeObs();
+    console.log("unsubscribe")
   }
+
+
+  }
+  
   

@@ -28164,37 +28164,8 @@ page-home .imgcenter {
   pointer-events: visible;
 }
 
-page-realtimenav {
-  position: relative;
-}
-
 page-realtimenav .map-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-page-realtimenav .bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-page-realtimenav .request-controls {
-  text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f4f4f4));
-  background: linear-gradient(transparent, #f4f4f4);
-}
-
-page-realtimenav .center {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70%;
-}
-
-page-realtimenav .imgcenter {
-  text-align: center;
-  background: transparent;
-  pointer-events: visible;
 }

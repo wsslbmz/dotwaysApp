@@ -45,6 +45,10 @@ export class SendpackageComponent implements OnChanges {
     this.steps();
     
   }
+
+
+
+  
   ngOnChanges(changes){
     console.log(this.mapstop);
     if(!this.mapstop){

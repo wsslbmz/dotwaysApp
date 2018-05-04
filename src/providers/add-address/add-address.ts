@@ -11,7 +11,7 @@ export class AddAdressProvider {
 
 	}
 
-	addadress (latpos,lngpos,updateday,createdby,updateby,createdday,labelAdr,contactAdr,mobileAdr,typeAdr,sharedtoAdr){
+	addadress (latpos,lngpos,updateday,createdby,updateby,createdday,labelAdr,contactAdr,mobileAdr,typeAdr,sharedtoAdr,userAdr){
 
     
     var headers = new Headers();
@@ -32,7 +32,8 @@ export class AddAdressProvider {
       labelAdr:labelAdr,
       mobileAdr:mobileAdr,
       typeAdr:typeAdr,
-      sharedtoAdr:sharedtoAdr
+      sharedtoAdr:[sharedtoAdr],
+      userAdr:userAdr
         }
 	
 		 this.http.post(this.url, adressdata ,options).subscribe(data => {

@@ -253,7 +253,8 @@ this.markerLocation();  }
                               this.contactName,
                               this.contactNum,
                               this.typeadr,
-                              this.sharedtoNum)
+                              this.sharedtoNum,
+                              this.auth.userData.data[0].nameUser+" "+this.auth.userData.data[0].surnameUser)
   }
   // this.addadressP.addadress("xxxxxxxx","yyyyyyyyy",this.date,"wassel","wassel",this.date,"bureau","wassel",53108705,"privee","1111111");
   // }

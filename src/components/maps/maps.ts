@@ -14,19 +14,20 @@ declare var google : any;
 export class MapsComponent implements OnInit{
 
   @Input() dispalycomponent ;
+
   public map ;
   public currentLocation;
   public mapstop : boolean;
   public hide :boolean;
+  public so ;
 
   constructor(public geolocation : Geolocation,
               public loadingCtrl : LoadingController) {
     console.log('Hello MapsComponent Component');
-    console.log(this.dispalycomponent);
 
     this.hide=true;
-
   }
+
 
   
   ngOnInit(){
@@ -37,7 +38,7 @@ export class MapsComponent implements OnInit{
       this.map.setCenter(location);
     })
     
-
+console.log(this.dispalycomponent);
   }
   
 

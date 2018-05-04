@@ -7,15 +7,16 @@
             Profile
         </ion-title>
         <ion-buttons end>
-            <button ion-button icon-only>
-        <ion-icon name="brush"></ion-icon>
-      </button>
+            <button ion-button icon-only *ngIf="hide == false" (click)="hideElem()"><ion-icon name="brush"  ></ion-icon></button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button icon-only *ngIf="hide == true" (click)="saveModifiation()"><ion-icon name="checkbox"></ion-icon></button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content padding id="page8">
-    <img src="/assets/imgs/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
-    <ion-list id="profile-list6">
+    <img src="/assets/imgs/person-icon.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+    <ion-list *ngIf="hide == false" id="profile-list6">
         <ion-item color="none" id="profile-list-item14">
             <ion-icon name="person" item-left></ion-icon>
             {{nom}} {{prenom}}
@@ -23,6 +24,10 @@
         <ion-item color="none" id="profile-list-item15">
             <ion-icon name="finger-print" item-left></ion-icon>
             {{login}}
+        </ion-item>
+        <ion-item color="none" id="profile-list-item18">
+            <ion-icon name="call" item-left></ion-icon>
+            {{mobile}}
         </ion-item>
         <ion-item color="none" id="profile-list-item18">
             <ion-icon name="mail" item-left></ion-icon>
@@ -33,6 +38,32 @@
             ********* <button ion-button end><ion-icon name="lock"  isActive="true"></ion-icon></button>
         </ion-item>
         <ion-item color="none" id="profile-list-item17">
+            <ion-icon name="star" item-left></ion-icon>
+            Rate {{rate}}
+        </ion-item>
+    </ion-list>
+    <ion-list *ngIf="hide == true" id="profile-list-input">
+        <ion-item color="none" id="profile-list-input-1">
+            <ion-icon name="person" item-left></ion-icon>
+            <input type="text" [(ngModel)]="newName" placeholder="{{nom}}">
+        </ion-item>
+        <ion-item color="none" id="profile-list-input-5">
+            <ion-icon name="person" item-left></ion-icon>
+            <input type="text" [(ngModel)]="newSurname" placeholder="{{prenom}}">
+        </ion-item>
+        <ion-item color="none" id="profile-list-input-2">
+            <ion-icon name="finger-print" item-left></ion-icon>
+            <input type="text" [(ngModel)]="newLogin" placeholder="{{login}}">
+        </ion-item>
+        <ion-item color="none" id="profile-list-input-3">
+            <ion-icon name="mail" item-left></ion-icon>
+            <input type="text" [(ngModel)]="newEmail" placeholder="{{email}}">
+        </ion-item>
+        <ion-item color="none" id="profile-list-input-4">
+            <ion-icon name="key" item-left></ion-icon>
+            ********* <button ion-button end><ion-icon name="lock" isActive="true"></ion-icon></button>
+        </ion-item>
+        <ion-item color="none" id="profile-list-input-5">
             <ion-icon name="star" item-left></ion-icon>
             Rate {{rate}}
         </ion-item>
