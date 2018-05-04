@@ -15,12 +15,12 @@
 </ion-header>
 <ion-content padding id="page3">
     <ion-list id="adressesPublique-list11">
-        <ion-item color="none" id="adressesPublique-list-item33">
+        <ion-item color="none" id="adressesPublique-list-item33" *ngFor="let item of jsonObj" (click)="openAdressesPubDetailsPage(item)">
             <ion-thumbnail item-left>
                 <img />
             </ion-thumbnail>
             <h2>
-                Item
+                {{item.idAdress}}
             </h2>
         </ion-item>
     </ion-list>

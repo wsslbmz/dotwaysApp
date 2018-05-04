@@ -14,9 +14,10 @@ import { MyApp } from './app.component';
 import { MapsComponent } from '../components/maps/maps';
 import { HomePage } from '../pages/home/home';
 
-import { AdressesPriveePage } from '../pages/adresses-privee/adresses-privee';
-import { AdressesPubliquePage } from '../pages/adresses-publique/adresses-publique';
-import { AdressesPartagePage } from '../pages/adresses-partage/adresses-partage';
+import {AdressesPriveePage as  AdressesPriveePage,AdressesPriveeDetailsPage } from '../pages/adresses-privee/adresses-privee';
+
+import { AdressesPubliquePage as AdressesPubliquePage,AdressesPubDetailsPage } from '../pages/adresses-publique/adresses-publique';
+import { AdressesPartagePage as AdressesPartagePage, AdressesPartageDetailsPage } from '../pages/adresses-partage/adresses-partage';
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
@@ -24,7 +25,10 @@ import { ValidnumPage } from '../pages/validnum/validnum';
 import { Register2Page } from '../pages/register2/register2';
 import { TakephotoPage } from '../pages/takephoto/takephoto';
 import { ProfilePage } from '../pages/profile/profile';
-import { HistoriquePage } from '../pages/historique/historique';
+
+import {HistoriquePage as HistoriquePage,HistoriqueDetailsPage,DriverDetailsPage } from '../pages/historique/historique';
+
+
 import { CorbeillePage } from '../pages/corbeille/corbeille';
 import { NotificationPage } from '../pages/notification/notification';
 import { ConfigurationPage } from '../pages/configuration/configuration';
@@ -70,7 +74,13 @@ import { RealtimenavComponent } from '../components/realtimenav/realtimenav';
     SendpackageComponent,
     AddadressComponent,
     RealtimenavPage,
-    RealtimenavComponent
+    RealtimenavComponent,
+    HistoriqueDetailsPage,
+    DriverDetailsPage,
+    AdressesPubDetailsPage,
+    AdressesPriveeDetailsPage,
+    AdressesPartageDetailsPage,
+
   ],
   imports: [
     BrowserModule,
@@ -100,6 +110,11 @@ import { RealtimenavComponent } from '../components/realtimenav/realtimenav';
     AddadressPage,
     AddadressComponent,
     RealtimenavPage,
+    HistoriqueDetailsPage,
+    DriverDetailsPage,
+    AdressesPubDetailsPage,
+    AdressesPriveeDetailsPage,
+    AdressesPartageDetailsPage
     
   ],
   providers: [
