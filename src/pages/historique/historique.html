@@ -11,31 +11,22 @@
 <ion-content padding id="page11">
     <ion-list id="historique-list10">
         <ion-item-sliding>
-            <ion-item color="none" id="historique-list-item32" *ngFor="let item of jsonObj">
+            <ion-item color="none" id="historique-list-item32" *ngFor="let item of jsonObj" (click)="openHisDetailsPage(item)" >
                 <ion-thumbnail item-left   >
                     <img />
                 </ion-thumbnail>
                 <h2>
                     {{item.idDelivery}}
                 </h2>
-                <h2>
-                    {{item.costDelivery}}
-                </h2>
-                <h2>
-                    {{item.destDelivery.lat}}
-                    {{item.destDelivery.lng}}
-                </h2>
-                <h2>
-                    {{item.sourceDelivery.lat}}
-                    {{item.sourceDelivery.lng}}
-                </h2>
-                <h2>
-                    {{item.timingDelivery}}
-                </h2>
-                <h2>
-                    {{item.packageDelivery}}
-                </h2>
             </ion-item>
+            <ion-item color="none" id="historique-list-item32" *ngFor="let item1 of jsonObj1" (click)="openDriverDetailsPage(item1)" >
+                    <ion-thumbnail item-left   >
+                        <img />
+                    </ion-thumbnail>
+                    <h2>
+                        {{item1.mobileAdr}}
+                    </h2>
+                </ion-item>
             <ion-item-options side="left">
                 <button ion-button color="primary">
             <ion-icon name="share"></ion-icon>

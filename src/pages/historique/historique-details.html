@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        HistoriqueDetails    
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+        <h2>
+              id=  {{item.idDelivery}}
+            </h2>
+            <h2>
+               cout= {{item.costDelivery}}
+            </h2>
+            <h2>
+                Destination:<br>
+               lat= {{item.destDelivery.lat}}<br>
+               lng= {{item.destDelivery.lng}}
+            </h2>
+            <h2>
+                source: <br>
+               lat= {{item.sourceDelivery.lat}}<br>
+                lng={{item.sourceDelivery.lng}}
+            </h2>
+            <h2>
+               timing= {{item.timingDelivery}}
+            </h2>
+            <h2>
+              sizrpackage:  {{item.packageDelivery.sizePackage}}<br>
+                type package:{{item.packageDelivery.typePackage}}<br>
+               valeurpackage: {{item.packageDelivery.valPackage}}<br>
+               weight package: {{item.packageDelivery.weightPackage}}
+
+            </h2>
+  </ion-content>
