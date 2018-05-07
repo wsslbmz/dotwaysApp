@@ -1,8 +1,10 @@
-import { AuthProvider } from './../../providers/auth/auth';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Component } from '@angular/core';
 import { NavController,NavParams } from 'ionic-angular';
+import { UserProvider } from '../../providers/user/user';
+import { AdressProvider } from '../../providers/adress/adress';
+
 
 @Component({
   templateUrl: 'adresses-partage-details.html',
@@ -21,28 +23,27 @@ export class AdressesPartageDetailsPage {
   templateUrl: 'adresses-partage.html'
 })
 export class AdressesPartagePage {
-  private url : string ="http://147.135.136.78:8052/adress/bysharedto/";
   public liv : any ;
   public jsonObj ;
   public mobile=this.auth.userData.data[0].mobileUser;
 
-  constructor(public navCtrl: NavController,public http : Http,public auth : AuthProvider) {
-    this.getMsg(this.mobile)
+  constructor(public navCtrl: NavController,public http : Http,public auth : UserProvider ,public adr :AdressProvider) {
+    this.getAdressShared(this.mobile,this.liv)
   }
-  
-  getMsg(mobile)
+  getAdressShared(mobile,result)
   {
     let data:Observable<any>
-    data =  this.http.get(this.url+mobile);
+    data =  this.http.get(this.adr.url+"bysharedto/"+mobile);
       data.subscribe(
-         res => { this.liv = res['_body'];
+         res => { result = res['_body'];
          console.log("resssssssssss",res)
-         let jo = JSON.parse(this.liv);
+         let jo = JSON.parse(result);
          let obj = Array.of(jo.data);
          this.jsonObj = obj[0];
          console.log("resssssss",this.jsonObj);
        });  
-} 
+  }
+  
   
 openAdressesPartageDetailsPage(item) {
   this.navCtrl.push(AdressesPartageDetailsPage, { item: item });

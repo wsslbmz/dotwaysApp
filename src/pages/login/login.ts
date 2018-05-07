@@ -3,7 +3,6 @@ import { NavController , NavParams, LoadingController , AlertController} from 'i
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
 import { FormControl,Validators , FormGroup } from '@angular/forms';
-import { AuthProvider } from '../../providers/auth/auth';
 import { HomePage } from '../home/home';
 import { RegisterPage } from '../register/register';
 import { Register2Page } from '../register2/register2';
@@ -12,6 +11,7 @@ import 'rxjs/add/operator/toPromise';
 import { timeout } from 'rxjs/operator/timeout';
 import { TimeoutDebouncer } from 'ionic-angular/util/debouncer';
 import { TimeInterval } from 'rxjs';
+import { UserProvider } from '../../providers/user/user';
 
 
 @Component({
@@ -28,7 +28,7 @@ export class LoginPage {
   password: string;
   view :any;
 constructor(public navCtrl: NavController, private gp : GooglePlus ,private fb: Facebook , public navParams: NavParams, 
-				public loadingCtrl: LoadingController, public auth: AuthProvider, private alertCtrl : AlertController ) {
+				public loadingCtrl: LoadingController, public auth: UserProvider, private alertCtrl : AlertController ) {
 this.userForm = new FormGroup({
           loginCtl :new FormControl('',[Validators.required,Validators.minLength(3)]),
           passwordCtl :new FormControl('',[Validators.required,Validators.minLength(3)])
@@ -51,36 +51,31 @@ this.userForm = new FormGroup({
   }
 	authlogin(){
 		this.showLoader();
-		this.auth.login(this.login, this.password).map(res => res.json()).subscribe((res) => {
+		this.auth.loginUser(this.login, this.password).map(res => res.json()).subscribe((res) => {
 		this.loading.dismiss();
 			if(res.success){
-        this.auth.login(this.login, this.password)
+        this.auth.loginUser(this.login, this.password)
         .toPromise()
 	    	.then((response) =>
         {
           this.auth.userData = response.json();
           console.log('API Response : ', response.json());
         })
-        this.navCtrl.setRoot(HomePage);
-        if(false){
-          let timeout = setTimeout( () => {
-            let alert = this.alertCtrl.create({
-              title: 'Time out',
-              message: 'Problem de connexion',
-              buttons: [
-                {
-                  text: 'OK',
-                  handler: () => {
-                    console.log('ok clicked');
-                  }
-                }]
-            });
-            alert.present(); 
-            this.loading.dismiss();       
-          },8000);
-        }
-        
-			}
+        this.navCtrl.setRoot(HomePage);  
+      }
+      else{
+      let alert = this.alertCtrl.create({
+        title: 'Echec de Connexion',
+        message: 'Le logoin ou le mot de passe est incorect',
+        buttons: [
+          {text: 'OK',
+           handler: () => {
+           console.log('ok clicked');
+            }
+          }]
+      });
+      alert.present(); 
+      }
 		}, (err) => {
       this.loading.dismiss();
       let alert = this.alertCtrl.create({

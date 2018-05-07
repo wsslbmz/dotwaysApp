@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http } from '@angular/http';
-import { AuthProvider } from './../../providers/auth/auth';
 import { NavController, AlertController } from 'ionic-angular';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/toPromise';
 import * as SlidingMarker  from 'marker-animate-unobtrusive';
+import { UserProvider } from '../../providers/user/user';
+
 
 
 
@@ -37,7 +38,7 @@ export class RealtimenavComponent implements OnInit{
   public polylinePath;
   public obs ;
   public obsTime = 5000;
-  constructor(public navCtrl: NavController ,public auth:AuthProvider,public http:Http, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController ,public auth:UserProvider,public http:Http, public alertCtrl: AlertController) {
     console.log('Hello RealtimenavComponent Component');
     this.obs = true;
     

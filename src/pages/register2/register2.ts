@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NavController,NavParams,LoadingController } from 'ionic-angular';
 import { ValidnumPage } from '../validnum/validnum';
 import { HomePage } from '../home/home';
-import {AdduserProvider} from '../../providers/adduser/adduser';
-import { AuthProvider } from '../../providers/auth/auth';
+import { UserProvider } from '../../providers/user/user';
 
 @Component({
   selector: 'page-register2',
@@ -20,7 +19,7 @@ nameUser:string;
 surnameUser:string;
 public date= new Date();
 
-  constructor(public navCtrl: NavController ,public navparm: NavParams,public adduserP :AdduserProvider ,public auth :AuthProvider) {
+  constructor(public navCtrl: NavController ,public navparm: NavParams,public auth :UserProvider) {
 
     this.login = this.navparm.get('login')
     this.password = this.navparm.get('password')
@@ -33,7 +32,7 @@ public date= new Date();
     }
 
 add(){
-  this.adduserP.adduser(this.login,this.password,this.nameUser,this.surnameUser,this.mobileUser,this.emailUser,this.date,this.nameUser,this.nameUser,this.date,0,"0");
+  this.auth.addUser(this.login,this.password,this.nameUser,this.surnameUser,this.mobileUser,this.emailUser,this.date,this.nameUser,this.nameUser,this.date,0,"0");
 }
 
 
@@ -41,9 +40,9 @@ add(){
     if (!params) params = {};
     this.navCtrl.push(ValidnumPage);
     this.add();
-    this.auth.login(this.login,this.password).map(res => res.json()).subscribe((res) => {
+    this.auth.loginUser(this.login,this.password).map(res => res.json()).subscribe((res) => {
 			if(res.success){
-        this.auth.login(this.login, this.password)
+        this.auth.loginUser(this.login, this.password)
         .toPromise()
 	    	.then((response) =>
         {

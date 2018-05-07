@@ -1,9 +1,9 @@
 import { Observable } from 'rxjs/Observable';
 import { Http } from '@angular/http';
-import { AuthProvider } from './../../providers/auth/auth';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import 'rxjs/add/operator/toPromise';
+import { UserProvider } from '../../providers/user/user';
 
 
 
@@ -45,7 +45,7 @@ export class HistoriquePage {
   public trip : any ;
   public jsonObj1;
 
-  constructor(public navCtrl: NavController ,public auth:AuthProvider,public http:Http) {
+  constructor(public navCtrl: NavController ,public auth:UserProvider,public http:Http) {
   this.getMsg(this.id);
   this.getTrip(this.id);
 }

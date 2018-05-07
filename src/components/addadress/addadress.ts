@@ -1,9 +1,9 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { MapsComponent } from '../maps/maps';
 import { AlertController } from 'ionic-angular';
-import { AddAdressProvider } from '../../providers/add-address/add-address';
-import { AuthProvider } from '../../providers/auth/auth';
-AuthProvider
+import { AdressProvider } from '../../providers/adress/adress';
+import { UserProvider } from '../../providers/user/user';
+
 declare var google : any;
 
 @Component({
@@ -27,7 +27,7 @@ export class AddadressComponent implements OnChanges{
   public date = new Date();
 
 
-  constructor(public alertCtrl : AlertController , public addadressP : AddAdressProvider,public auth :AuthProvider) {
+  constructor(public alertCtrl : AlertController , public adr : AdressProvider,public auth :UserProvider) {
     console.log('Hello AddadressComponent Component');
     this.Alert1();
     this.index=0;
@@ -243,7 +243,7 @@ this.markerLocation();  }
     alert.present();
   }
   addAdress(){
-    this.addadressP.addadress((this.adrPosition.lat()).toString(),
+    this.adr.addadress((this.adrPosition.lat()).toString(),
                               (this.adrPosition.lng()).toString(),
                               this.date,
                               this.auth.userData.data[0].idUser,

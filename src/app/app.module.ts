@@ -39,16 +39,15 @@ import {ContentDrawer} from '../components/content-drawer/content-drawer';
 import { HttpModule } from '@angular/http';
 
 
-import { AuthProvider } from '../providers/auth/auth';
-import { AdduserProvider } from '../providers/adduser/adduser';
+
 import { SendpackageComponent } from '../components/sendpackage/sendpackage';
-import { AddDeliveryProvider } from '../providers/add-delivery/add-delivery';
 import { AddadressPage } from '../pages/addadress/addadress';
 import { AddadressComponent } from '../components/addadress/addadress';
 import { RealtimenavPage } from '../pages/realtimenav/realtimenav';
-import { AddAdressProvider } from '../providers/add-address/add-address';
-import { GetHisotiqueProvider } from '../providers/get-hisotique/get-hisotique';
 import { RealtimenavComponent } from '../components/realtimenav/realtimenav';
+import { UserProvider } from '../providers/user/user';
+import { TripProvider } from '../providers/trip/trip';
+import { AdressProvider } from '../providers/adress/adress';
 
 @NgModule({
   declarations: [
@@ -122,16 +121,16 @@ import { RealtimenavComponent } from '../components/realtimenav/realtimenav';
     SplashScreen,
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider,
-    AdduserProvider,
     FileTransfer,
     Camera,
     GooglePlus,
     Facebook,
-    AddDeliveryProvider,
-    AddAdressProvider,
     LocalNotifications,
-    GetHisotiqueProvider
+    UserProvider,
+    TripProvider,
+    TripProvider,
+    UserProvider,
+    AdressProvider
   ]
 })
 export class AppModule {}

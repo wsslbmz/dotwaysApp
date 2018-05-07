@@ -16,12 +16,12 @@
 <ion-content padding id="page4">
     <ion-list id="adressesPartage-list12">
         <ion-item-sliding>
-            <ion-item color="none" id="adressesPartage-list-item34" *ngFor="let item of jsonObj" (click)="openAdressesPartageDetailsPage(item)" >
+            <ion-item color="none" id="adressesPartage-list-item34" *ngFor="let item of jsonObj" (click)="openAdressesPartageDetailsPage(item)">
                 <ion-thumbnail item-left>
                     <img />
                 </ion-thumbnail>
                 <h2>
-                    {{item.idAdress}}
+                    {{item.labelAdr}}
                 </h2>
             </ion-item>
             <ion-item-options side="left">

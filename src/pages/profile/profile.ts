@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, LoadingController,AlertController } from 'ionic-angular';
+import { NavController, LoadingController,AlertController,ToastController } from 'ionic-angular';
 import 'rxjs';
-import { AuthProvider } from '../../providers/auth/auth';
 import { Http, Headers ,RequestOptions } from '@angular/http';
+import { UserProvider } from '../../providers/user/user';
+import { Observable } from 'rxjs/Observable';
+
 
 @Component({
   selector: 'page-profile',
@@ -24,10 +26,10 @@ export class ProfilePage {
   newEmail:string;
   newName:string;
   newSurname:string ;
-  date = new Date;    
-  url: string = 'http://147.135.136.78:8052/user/update/'
+  date = new Date; 
+  loading :any;   
 
-  constructor(public navCtrl: NavController, public userdata : AuthProvider ,public alertCtrl:AlertController,public http : Http) {
+  constructor(public navCtrl: NavController, public toast : ToastController,public userdata : UserProvider ,public alertCtrl:AlertController,public http : Http,public loadingCtrl: LoadingController) {
     this.getUser();
     this.hide = false;
     
@@ -50,7 +52,9 @@ export class ProfilePage {
     this.hide= true;
     console.log("jjjjjjjj");
     console.log(this.newEmail,this.newName,this.newSurname,this.newLogin)
-    this.checkProfile();
+    if(this.checkProfile()){
+    this.saveModifiation();
+    }
   }
   saveModifiation(){
     let alert = this.alertCtrl.create({
@@ -70,39 +74,17 @@ export class ProfilePage {
           text: 'Oui',
           handler: () => {
             console.log('accept clicked');
-            this.updateProfile("aa","aa","aa","aa",this.date,"aa");
+            this.userdata.updateUser(this.id,this.newLogin,this.newName,this.newSurname,this.newEmail,this.date,this.id);
+            this.getUser();
             this.hide = false;
           }
         }
       ]
     });
     alert.present();
+
   }
 
-  updateProfile (login,nameUser,surnameUser,emailUser,updateday,updateby)
-  {
-      var headers = new Headers();
-      headers.append("Accept", 'application/json');
-      headers.append('Content-Type', 'application/json' );
-      let options = new RequestOptions({ headers: headers });
-   
-      let userdata = {
-        nameUser: nameUser,
-        login:login,
-        surnameUser:surnameUser,
-        emailUser:emailUser,
-        updateday:updateday,
-        updateby:updateby
-      }
-    
-       this.http.post(this.url+this.id, userdata ,options).subscribe(data => {
-        console.log(data['_body']);
-       }, error => {
-        console.log(error);// Error getting the data
-  
-      });
-  
-    }
 
   checkProfile(){
     if(!this.newName || !this.newSurname || !this.newLogin|| !this.newEmail){
@@ -114,9 +96,99 @@ export class ProfilePage {
       return true;
     }
   }
+
+  updatePassword(){
+    let alert = this.alertCtrl.create({
+      title: 'Changement mot de passe',
+      inputs: [
+        {          
+          name : 'pass1',
+          label: 'Nouveau mot de passe',
+          type : 'password'
+        },
+        {
+          name : 'pass2',
+          label: 'Confirmer le mot de passe',
+          type : 'password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Modifier',
+          handler: data => {
+            if (data.pass1 == data.pass2){
+            this.userdata.updateUserPassword(this.id,data.pass1);
+            this.presentToast("Mot de passe change correctement");
+
+            }
+            else{
+              this.presentToast("Erreur lors de changement du mot de passe");
+            }
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toast.create({
+      message: msg,
+      duration: 2000,
+      position: 'top'
+    });
+  
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+  
+    toast.present();
+  }
+  
+// authlogin(){
+//   this.showLoader();
+//   this.userdata.loginUser(this.newLogin, this.motpasse).map(res => res.json()).subscribe((res) => {
+//   this.loading.dismiss();
+//     if(res.success){
+//       this.userdata.loginUser(this.newLogin, this.motpasse)
+//       .toPromise()
+//       .then((response) =>
+//       {
+//         this.userdata.userData = response.json();
+//         console.log('API Response : ', response.json());
+//       })
+//     }
+//   }, (err) => {
+//     this.loading.dismiss();
+//     let alert = this.alertCtrl.create({
+//       title: 'Echec de Connexion',
+//       message: 'Le logoin ou le mot de passe est incorect',
+//       buttons: [
+//         {text: 'OK',
+//          handler: () => {
+//          console.log('ok clicked');
+//           }
+//         }]
+//     });
+//     alert.present();
+//   });
+//   console.log(this.userdata.userData);
+// }
+// showLoader(){
+//   this.loading = this.loadingCtrl.create({
+//     content: 'saving...'
+//   });
+//   this.loading.present();
+// }
+
 }
-
-
   
   
   

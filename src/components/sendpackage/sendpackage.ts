@@ -1,8 +1,9 @@
 import { Component, Input, OnChanges, Output, EventEmitter, OnInit } from '@angular/core';
 import { AlertController } from 'ionic-angular';
 import { MapsComponent } from '../maps/maps';
-import { AddDeliveryProvider } from '../../providers/add-delivery/add-delivery';
-import { AuthProvider } from '../../providers/auth/auth';
+import { TripProvider } from '../../providers/trip/trip';
+import { UserProvider } from '../../providers/user/user';
+
 
 declare var google : any;
 
@@ -36,7 +37,7 @@ export class SendpackageComponent implements OnChanges {
   public date= new Date();
 
 
-  constructor(private alertCtrl: AlertController,public adddeliveryP : AddDeliveryProvider , public auth : AuthProvider) {
+  constructor(private alertCtrl: AlertController,public adddelivery : TripProvider , public auth : UserProvider) {
     console.log('Hello SendpackageComponent Component');
     this.hide1=false;
     this.hide2=true;
@@ -66,7 +67,7 @@ addDelivery(){
   this.valPack=10.1;
   console.log(this.valPack);
   console.log(this.date);
-  this.adddeliveryP.adddelivery((this.srcPosition.lat()).toString(),
+  this.adddelivery.addDelivery((this.srcPosition.lat()).toString(),
                                 (this.srcPosition.lng()).toString(),
                                 this.date,
                                 this.auth.userData.data[0].idUser,

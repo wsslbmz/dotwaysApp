@@ -9,34 +9,57 @@
     </ion-navbar>
 </ion-header>
 <ion-content padding id="page11">
-    <ion-list id="historique-list10">
+    <ion-list>
+        <ion-item-sliding *ngFor="let item of jsonObj" (click)="openHisDetailsPage(item)">
+            <ion-item>
+                <ion-card class="card-background-page">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center={{item.destDelivery.lat}},{{item.destDelivery.lng}}&zoom=12&size=500x230&maptype=roadmapkey=AIzaSyAI3FyLciuE5iMzwxd7EDViVKJtXIZ5oMs" />
+                    <div class="card-title col-2">{{item.destDelivery.lat}}</div>
+                    <div class="card-subtitle col-2">{{item.destDelivery.lng}}</div>
+                    <ion-badge item-end>test</ion-badge>
+                </ion-card>
+            </ion-item>
+            <ion-item-options side="left">
+                <button ion-button color="primary">
+                        <ion-icon name="share"></ion-icon>
+                        </button>
+            </ion-item-options>
+            <ion-item-options side="right">
+                <button ion-button color="danger">
+                        <ion-icon name="trash"></ion-icon>
+                         </button>
+            </ion-item-options>
+        </ion-item-sliding>
+
+    </ion-list>
+
+
+
+
+
+
+    <!-- <ion-list id="historique-list10" *ngFor="let item of jsonObj" (click)="openHisDetailsPage(item)">
         <ion-item-sliding>
-            <ion-item color="none" id="historique-list-item32" *ngFor="let item of jsonObj" (click)="openHisDetailsPage(item)" >
-                <ion-thumbnail item-left   >
-                    <img />
+            <ion-item color="none" id="historique-list-item32">
+                <ion-thumbnail item-left>
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyAI3FyLciuE5iMzwxd7EDViVKJtXIZ5oMs"
+                    />
                 </ion-thumbnail>
                 <h2>
                     {{item.idDelivery}}
                 </h2>
             </ion-item>
-            <ion-item color="none" id="historique-list-item32" *ngFor="let item1 of jsonObj1" (click)="openDriverDetailsPage(item1)" >
-                    <ion-thumbnail item-left   >
-                        <img />
-                    </ion-thumbnail>
-                    <h2>
-                        {{item1.mobileAdr}}
-                    </h2>
-                </ion-item>
+
             <ion-item-options side="left">
                 <button ion-button color="primary">
-            <ion-icon name="share"></ion-icon>
-          </button>
+                    <ion-icon name="share"></ion-icon>
+                    </button>
             </ion-item-options>
             <ion-item-options side="right">
                 <button ion-button color="danger">
-            <ion-icon name="trash"></ion-icon>
-          </button>
+                    <ion-icon name="trash"></ion-icon>
+                     </button>
             </ion-item-options>
         </ion-item-sliding>
-    </ion-list>
+    </ion-list> -->
 </ion-content>

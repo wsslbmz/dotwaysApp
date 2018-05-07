@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { GetHisotiqueProvider } from '../../providers/get-hisotique/get-hisotique';
 import { Http } from '@angular/http';
 import { RealtimenavPage } from '../realtimenav/realtimenav';
 @Component({

@@ -16,6 +16,7 @@
 </ion-header>
 <ion-content padding id="page8">
     <img src="/assets/imgs/person-icon.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+
     <ion-list *ngIf="hide == false" id="profile-list6">
         <ion-item color="none" id="profile-list-item14">
             <ion-icon name="person" item-left></ion-icon>
@@ -35,7 +36,7 @@
         </ion-item>
         <ion-item color="none" id="profile-list-item16">
             <ion-icon name="key" item-left></ion-icon>
-            ********* <button ion-button end><ion-icon name="lock"  isActive="true"></ion-icon></button>
+            ********* <button ion-button end><ion-icon name="lock"  isActive="true" (click)="updatePassword()"></ion-icon></button>
         </ion-item>
         <ion-item color="none" id="profile-list-item17">
             <ion-icon name="star" item-left></ion-icon>
@@ -61,7 +62,7 @@
         </ion-item>
         <ion-item color="none" id="profile-list-input-4">
             <ion-icon name="key" item-left></ion-icon>
-            ********* <button ion-button end><ion-icon name="lock" isActive="true"></ion-icon></button>
+            ********* <button ion-button end><ion-icon name="lock" isActive="true" (click)="updatePassword()"></ion-icon></button>
         </ion-item>
         <ion-item color="none" id="profile-list-input-5">
             <ion-icon name="star" item-left></ion-icon>

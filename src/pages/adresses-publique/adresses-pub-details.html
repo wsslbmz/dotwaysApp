@@ -1,12 +1,33 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
-      Adress publique details
-      </ion-title>
+        <ion-title>
+            Adress publique details
+        </ion-title>
     </ion-navbar>
-  </ion-header>
-  <ion-content>
-    <h2>
+</ion-header>
+<ion-content>
+    <ion-card>
+
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center={{item.geolocAdr.lat}},{{item.geolocAdr.lng}}&zoom=12&size=500x230&maptype=roadmapkey=AIzaSyAI3FyLciuE5iMzwxd7EDViVKJtXIZ5oMs" />
+
+        <ion-item>
+            <ion-icon name="locate" item-start large></ion-icon>
+            <h2>{{item.labelAdr}}</h2>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="contact" item-start large></ion-icon>
+            <h2> {{item.contactAdr}}</h2>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="call" item-start large></ion-icon>
+            <h2>{{item.mobileAdr}}</h2>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="flag" item-start large></ion-icon>
+            <h2> {{item.typeAdr}}</h2>
+        </ion-item>
+    </ion-card>
+    <!-- <h2>
       {{item.contactAdr}}
   </h2>
   <h2>
@@ -25,5 +46,5 @@
   </h2>
   <h2>
       {{item.typeAdr}}
-  </h2>
+  </h2> -->
 </ion-content>
